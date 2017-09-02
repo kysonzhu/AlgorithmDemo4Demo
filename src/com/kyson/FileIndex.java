@@ -12,6 +12,7 @@ public class FileIndex {
 		HashMap<String, String> map = new HashMap<>();
 		//找到重复元素
 		map.put("1.1.28", DumplicateElements.class.getName());
+		map.put("1.1.29", EquivalentKey.class.getName());
 		
 	}
 

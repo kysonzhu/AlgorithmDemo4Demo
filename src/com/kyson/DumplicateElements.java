@@ -1,5 +1,13 @@
 package com.kyson;
 
+/**
+ * http://www.jianshu.com/p/396eb81f7d4c
+ * 
+ * 1.1.28 删除重复元素。修改BinarySearch类中的测试用例来删去排序之后白名单中的所有重复元素。
+ * 
+ */
+
+
 import java.util.Arrays;
 
 public class DumplicateElements {
