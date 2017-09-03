@@ -1,4 +1,4 @@
-package com.kyson;
+package com.kyson.chapter1.section1;
 
 /**
  * http://www.jianshu.com/p/396eb81f7d4c

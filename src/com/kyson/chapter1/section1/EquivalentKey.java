@@ -1,4 +1,4 @@
-package com.kyson;
+package com.kyson.chapter1.section1;
 
 import java.nio.file.SimpleFileVisitor;
 
@@ -67,6 +67,7 @@ public class EquivalentKey {
 	}
 	
 	public static int count(int key,int[] N) {
+		//先找到这个数
 		int searchResult = binarySearch(key, N);
 		System.out.println("searchResult: " + searchResult);
 

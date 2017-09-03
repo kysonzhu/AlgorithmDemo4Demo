@@ -1,4 +1,4 @@
-package com.kyson;
+package com.kyson.chapter1.section1;
 
 import java.util.Arrays;
 
