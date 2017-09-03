@@ -47,7 +47,9 @@ public class EquivalentKey {
 	
 	public static int rank(int key,int[] N){
 	
+		//先找到这个数
 		int searchResult = binarySearch(key, N);
+		
 		System.out.println("searchResult: " + searchResult);
 		
 		int resultNum = 0;
