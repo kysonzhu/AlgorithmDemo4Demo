@@ -4,7 +4,6 @@ public class IsPrime {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
 		
 	}
 	
@@ -13,5 +12,10 @@ public class IsPrime {
 			if (N % i ==0) return false;
 		return true;
 	}
-
+	
+	
+	
+	
+	
+	
 }
