@@ -4,9 +4,13 @@ import java.util.ArrayList;
 
 /**
  * 
- * @author zhujinhui
- * 点的类
+ * 1.2.1编写一个Point2D的用例，从命令行接受一个整数N。
+ * 在单位正方形内生成N个随机点，然后计算两点之间的最近距离
  *
+ * 1.2.1 Write a Point2D client that takes an integer 
+ * value N from the command line, generates N random 
+ * points in the unit square, and computes the distance 
+ * separating the closest pair of points.
  */
 public class Point2D {
 	
