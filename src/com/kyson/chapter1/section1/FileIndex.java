@@ -13,6 +13,7 @@ public class FileIndex {
 		//找到重复元素
 		map.put("1.1.28", DumplicateElements.class.getName());
 		map.put("1.1.29", EquivalentKey.class.getName());
+		map.put("1.1.32", Histogram.class.getName());
 		
 	}
 
