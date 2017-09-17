@@ -3,6 +3,19 @@ package com.kyson.chapter1.section2;
 import edu.princeton.cs.algs4.StdDraw;
 import edu.princeton.cs.algs4.StdRandom;
 
+/***
+ * 
+ * 1.2.3 编写一个Interval2D的用例，从命令行接受参数N、min和max。
+ * 生成N个随机的2D间隔，其宽度和高均匀地分布在单位正方形中的min和max之间。
+ * 用StdDraw画出它们并打印出相交的间隔对的数量以及有包含关系的间隔对数量。
+ * 1.2.3 Write an Interval2D client that takes command-line arguments
+ *  N,min,and max and generates N random 2D intervals whose width and 
+ *  height are uniformly distributed between min and max in the unit square.
+ *  Draw them on StdDraw and print the number of pairs of intervals that
+ *  intersect and the number of intervals that are contained in one another.
+ *
+ */
+
 public class Interval2D {
 	public Interval1D x;
 	public Interval1D y;
