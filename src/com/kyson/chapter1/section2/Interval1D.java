@@ -14,8 +14,8 @@ import java.util.ArrayList;
  */
 public class Interval1D {
 	
-	private double lo;
-	private double hi;
+	public double lo;
+	public double hi;
 	
 	public Interval1D (double tlo, double thi) {
 		if (tlo > thi) {
@@ -40,15 +40,23 @@ public class Interval1D {
 	 * @param that
 	 * @return
 	 */
-	public boolean intersect(Interval1D that) {
-		if (this.hi < that.lo) {
-			return false;
-		}else if ((this.hi > that.lo) && (this.lo < that.hi)) {
-			return true;
-		}else {
-			return false;
-		}		
-	}
+//	public boolean intersect(Interval1D that) {
+//		if (this.hi < that.lo) {
+//			return false;
+//		}else if ((this.hi > that.lo) && (this.lo < that.hi)) {
+//			return true;
+//		}else {
+//			return false;
+//		}		
+//	}
+	
+	public boolean intersect(Interval1D that)
+    {
+        if (this.hi < that.lo || that.hi < this.lo)
+            return false;
+
+        return true;
+    }
 	
 	@Override
 	public String toString() {
