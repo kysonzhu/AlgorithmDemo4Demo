@@ -95,7 +95,7 @@ public class DrawLine {
 //		   StdDraw.filledRectangle(x, y, rw, rh);
 //		}
 		
-		   StdDraw.filledRectangle(0, 0, 0.3, 0.5);
+		StdDraw.filledRectangle(0, 0, 0.3, 0.5);
 
 	}
 	

@@ -6,6 +6,7 @@ import java.util.HashMap;
 import com.kyson.chapter1.section1.DumplicateElements;
 import com.kyson.chapter1.section1.EquivalentKey;
 import com.kyson.chapter1.section1.Histogram;
+import com.kyson.chapter1.section2.CircularRotation;
 import com.kyson.chapter1.section2.Interval1D;
 import com.kyson.chapter1.section2.Interval2D;
 import com.kyson.chapter1.section2.Point2D;
@@ -32,6 +33,8 @@ public class FileIndex {
 		map.put("1.2.1", Point2D.class.getName());
 		map.put("1.2.2", Interval1D.class.getName());
 		map.put("1.2.3", Interval2D.class.getName());
+		map.put("1.2.6", CircularRotation.class.getName());
+		
 		
 	}
 

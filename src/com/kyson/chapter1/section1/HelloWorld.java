@@ -1,5 +1,7 @@
 package com.kyson.chapter1.section1;
 
+import edu.princeton.cs.algs4.StdOut;
+
 public class HelloWorld {
     
     public static int mystery(int a, int b) {
@@ -24,10 +26,15 @@ public class HelloWorld {
       
     public static void main(String args[])  
     {  
-        System.out.println(mystery(2,25));  
-        System.out.println(mystery(3,11));  
-        System.out.println(mystery1(2,25));  
-        System.out.println(mystery1(3,11));  
+//        System.out.println(mystery(2,25));  
+//        System.out.println(mystery(3,11));  
+//        System.out.println(mystery1(2,25));  
+//        System.out.println(mystery1(3,11));  
+    	
+    	String s = "Hello World";
+    	s.toUpperCase();
+    	s.substring(6, 11);
+    	StdOut.println(s);
     }  
 
 }
