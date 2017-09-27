@@ -3,6 +3,23 @@ package com.kyson.chapter1.section2;
 public class Counter {
 
 	
-	public int counter;
+	private int count;
+	@SuppressWarnings("unused")
+	private final String name;
+	
+	public Counter(String id) {
+		name = id;
+	}
+	
+	public void increment() {
+		count++;
+	}
+	
+	public int tally() {
+		return count;
+	}
+	
+	
+	
 	
 }

@@ -14,10 +14,10 @@ public class BinarySearchCounter {
 		// TODO Auto-generated method stub
 
 		int[] numArray = { 1, 2, 3, 4, 67, 88, 89, 101, 222, 788, 999 };
-		Counter counter = new Counter();
+		Counter counter = new Counter("BinarySearchCounter");
 		int index = rank(222, numArray, counter);
 
-		System.out.println("index: " + index + "\ncouter:" + counter.counter );
+		System.out.println("index: " + index + "\ncouter:" + counter.tally() );
 	}
 
 	public static int rank(int t, int[] array, Counter counter) {
@@ -27,7 +27,7 @@ public class BinarySearchCounter {
 		int mid = (lo + hi) / 2;
 
 		while (t != array[mid]) {
-			counter.counter++;
+			counter.increment();;
 			if (t < array[mid]) {
 
 				if (hi == mid) {
