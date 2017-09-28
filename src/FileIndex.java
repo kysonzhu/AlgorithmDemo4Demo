@@ -9,6 +9,7 @@ import com.kyson.chapter1.section2.CircularRotation;
 import com.kyson.chapter1.section2.Interval1D;
 import com.kyson.chapter1.section2.Interval2D;
 import com.kyson.chapter1.section2.Point2D;
+import com.kyson.chapter1.section2.SmartDate;
 
 public class FileIndex {
 
@@ -33,7 +34,8 @@ public class FileIndex {
 		map.put("1.2.3", Interval2D.class.getName());
 		map.put("1.2.6", CircularRotation.class.getName());
 		map.put("1.2.9", BinarySearchCounter.class.getName());
-
+		map.put("1.2.10", SmartDate.class.getName());
+		
 	}
 
 }
