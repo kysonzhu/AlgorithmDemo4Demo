@@ -1,5 +1,7 @@
 package com.kyson.chapter1.section2;
 
+import java.security.PublicKey;
+
 /***
  * 1.2.11 根据Date的API实现一个SmartDate类型，在日期非法时抛出一个异常。
  * 1.2.11 Develop an implementation SmartDate of our Date API that raises an
@@ -43,7 +45,7 @@ public class SmartDate1 {
 			break;
 		case 2:{
 			if (day > 29) {
-				Exception exception = new Exception(month + "月小于31号");
+				Exception exception = new Exception(month + "月小于28号");
 				throw exception;
 			}
 			
@@ -78,12 +80,20 @@ public class SmartDate1 {
 		this.day 	= day;
 		this.year 	= year;
 		this.month 	= month;
+		
+		 
 	}
 	
+	public String toString(){
+		
+		return ""+ month + "/" + day + "/" + year;
+	}
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		SmartDate1 date = new SmartDate1(2007, 1, 50);
+		SmartDate1 date = new SmartDate1(2007, 1, 2);
+		String dateString = date.toString();
+		System.out.println(dateString);
 	}
 
 }

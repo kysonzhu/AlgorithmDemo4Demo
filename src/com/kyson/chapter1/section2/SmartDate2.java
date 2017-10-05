@@ -83,13 +83,26 @@ public class SmartDate2 {
 	
 	public String dayOfTheWeek(){
 		String resultWeek = "";
-		int y = this.year - YEARFIRSTTWO * 100;
+		int tempMonth = this.month;
+		int tempYear = this.year;
+		int tempDay = this.day;
+		if (this.month == 1 || this.month == 2) {
+			tempMonth += 12;
+			tempYear --;
+		}
+		
+		int y = tempYear - YEARFIRSTTWO * 100;
 		int floor1 = (int) Math.floor(y/4);
 		int floor2 = (int) (YEARFIRSTTWO / 4);
-		int floor3 = (int) Math.floor(26 * (this.month+1)/10);
+		int floor3 = (int) Math.floor(26 * (tempMonth+1)/10);
 		
-		int w = y + floor1 + floor2 -2 * YEARFIRSTTWO + floor3 + this.day - 1;
+		int w = y + floor1 + floor2 -2 * YEARFIRSTTWO + floor3 + tempDay - 1;
 		int key = w % DAYPERWEEK;
+		
+		if (key <0) {
+			key = key + 7;
+		}
+		
 		
 		switch (key) {
 		case 0:
@@ -120,12 +133,17 @@ public class SmartDate2 {
 		
 		return resultWeek;
 	}
+	
+	public String toString(){
+		
+		return ""+ month + "/" + day + "/" + year;
+	}
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		SmartDate2 date = new SmartDate2(2017, 10, 5);
 		String week = date.dayOfTheWeek();
-		System.out.println("today is :" + week);
+		System.out.println( date + " is :" + week);
 	}
 
 }
