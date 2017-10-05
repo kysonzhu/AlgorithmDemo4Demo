@@ -77,10 +77,52 @@ public class SmartDate2 {
 		this.year = year;
 		this.month = month;
 	}
+	
+	public String dayOfTheWeek(){
+		String resultWeek = "";
+		int y = this.year - 2000;
+		int floor1 = (int) Math.floor(y/4);
+		int floor2 = (int) (20 / 4);
+		int floor3 = (int) Math.floor(26 * (this.month+1)/10);
+		
+		int w = y + floor1 + floor2 -2 * 20 + floor3 + this.day - 1;
+		int key = w % 7;
+		
+		switch (key) {
+		case 0:
+			resultWeek = "星期日";
+			break;
+		case 1:
+			resultWeek = "星期一";
+			break;
+		case 2:
+			resultWeek = "星期二";
+			break;
+		case 3:
+			resultWeek = "星期三";
+			break;
+		case 4:
+			resultWeek = "星期四";
+			break;
+		case 5:
+			resultWeek = "星期五";
+			break;
+		case 6:
+			resultWeek = "星期六";
+			break;
+
+		default:
+			break;
+		}
+		
+		return resultWeek;
+	}
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		SmartDate2 date = new SmartDate2(2007, 1, 50);
+		SmartDate2 date = new SmartDate2(2017, 10, 5);
+		String week = date.dayOfTheWeek();
+		System.out.println("today is :" + week);
 	}
 
 }
