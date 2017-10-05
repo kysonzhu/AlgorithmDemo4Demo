@@ -6,7 +6,7 @@ package com.kyson.chapter1.section2;
  * Thursday……假定是21世纪 
  * 1.2.12 Add a method dayOfTheWeek() to SmartDate that
  * returns a String value Monday, Tuesday, Wednesday, Thursday, Friday,
- * Saturday, or Sunday, giving the ap- propriate day of the week for the date.
+ * Saturday, or Sunday, giving the appropriate day of the week for the date.
  * You may assume that the date is in the 21st century.
  */
 public class SmartDate2 {
