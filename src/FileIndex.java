@@ -10,6 +10,8 @@ import com.kyson.chapter1.section2.Interval1D;
 import com.kyson.chapter1.section2.Interval2D;
 import com.kyson.chapter1.section2.Point2D;
 import com.kyson.chapter1.section2.SmartDate1;
+import com.kyson.chapter1.section2.SmartDate2;
+import com.kyson.chapter1.section2.VisualCounter;
 
 public class FileIndex {
 
@@ -34,7 +36,9 @@ public class FileIndex {
 		map.put("1.2.3", Interval2D.class.getName());
 		map.put("1.2.6", CircularRotation.class.getName());
 		map.put("1.2.9", BinarySearchCounter.class.getName());
-		map.put("1.2.10", SmartDate1.class.getName());
+		map.put("1.2.10", VisualCounter.class.getName());
+		map.put("1.2.11", SmartDate1.class.getName());
+		map.put("1.2.12", SmartDate2.class.getName());
 		
 	}
 
