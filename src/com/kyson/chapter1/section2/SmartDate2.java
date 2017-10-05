@@ -17,6 +17,9 @@ public class SmartDate2 {
 	private final int month;
 	@SuppressWarnings("unused")
 	private final int day;
+	
+	private static final int YEARFIRSTTWO = 20;
+	private static final int DAYPERWEEK = 7;
 
 	public SmartDate2(int year, int month, int day) throws Exception {
 		if (year < 0 || month < 0 || day < 0) {
@@ -80,13 +83,13 @@ public class SmartDate2 {
 	
 	public String dayOfTheWeek(){
 		String resultWeek = "";
-		int y = this.year - 2000;
+		int y = this.year - YEARFIRSTTWO * 100;
 		int floor1 = (int) Math.floor(y/4);
-		int floor2 = (int) (20 / 4);
+		int floor2 = (int) (YEARFIRSTTWO / 4);
 		int floor3 = (int) Math.floor(26 * (this.month+1)/10);
 		
-		int w = y + floor1 + floor2 -2 * 20 + floor3 + this.day - 1;
-		int key = w % 7;
+		int w = y + floor1 + floor2 -2 * YEARFIRSTTWO + floor3 + this.day - 1;
+		int key = w % DAYPERWEEK;
 		
 		switch (key) {
 		case 0:
