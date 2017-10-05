@@ -8,7 +8,7 @@ package com.kyson.chapter1.section2;
  *
  */
 
-public class SmartDate {
+public class SmartDate1 {
 	
 	@SuppressWarnings("unused")
 	private final int year;
@@ -17,7 +17,7 @@ public class SmartDate {
 	@SuppressWarnings("unused")
 	private final int day;
 	
-	public SmartDate(int year,int month,int day) throws Exception {
+	public SmartDate1(int year,int month,int day) throws Exception {
 		if (year < 0 || month < 0 || day < 0) {
 			Exception exception = new Exception("年月日要大于0");
 			throw exception;
@@ -83,7 +83,7 @@ public class SmartDate {
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		SmartDate date = new SmartDate(2007, 1, 50);
+		SmartDate1 date = new SmartDate1(2007, 1, 50);
 	}
 
 }
