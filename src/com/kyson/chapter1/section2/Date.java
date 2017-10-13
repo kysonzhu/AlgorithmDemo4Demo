@@ -38,14 +38,14 @@ public class Date {
 			break;
 		case 2: {
 			if (day > 29) {
-				Exception exception = new Exception(month + "月小于29号");
+				Exception exception = new Exception(month + "月小于等于29号");
 				throw exception;
 			}
 
 			boolean leapYear = this.isLeapYear(year);
-			if (leapYear) {
+			if (!leapYear) {
 				if (day > 28) {
-					Exception exception = new Exception(month + "月小于28号");
+					Exception exception = new Exception(month + "月小于等于28号");
 					throw exception;
 				}
 			}
@@ -76,6 +76,9 @@ public class Date {
 	
 	/**
 	 * 判断是否为闰年
+	 * 判断闰年的方法：闰年满足两个条件（满足一个即为闰年）
+	 * 1、能被4整除但不能被100整除
+	 * 2、能被400整 除
 	 * @param year
 	 * @return
 	 */

@@ -18,7 +18,9 @@ public class ArrayExecise {
 		// TODO Auto-generated method stub
 
 		boolean[][] resultArray = boolArray(9);
-		System.out.println(Arrays.toString(resultArray));
+		for (int i = 0; i < resultArray.length; i++) {
+			System.out.println(Arrays.toString(resultArray[i]));
+		}
 	}
 	
 	
