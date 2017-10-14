@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fc5531b-8077-4986-bec8-9fe94eff533f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/kyson/chapter1/section3/FixedCapacityStack.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/kyson/chapter1/section3/FixedCapacityStackOfStrings.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FileIndex.java" afterPath="$PROJECT_DIR$/src/FileIndex.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kyson/chapter1/section3/FixedCapacityStack.java" afterPath="$PROJECT_DIR$/src/com/kyson/chapter1/section3/FixedCapacityStack.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,7 +20,7 @@
       <file leaf-file-name="SmartDate2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section2/SmartDate2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
+            <state relative-caret-position="-1668">
               <caret line="30" column="28" lean-forward="false" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
               <folding>
                 <element signature="e#439#466#0" expanded="true" />
@@ -28,12 +31,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FixedCapacityStack.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FixedCapacityStack.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section3/FixedCapacityStack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+            <state relative-caret-position="418">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FixedCapacityStackOfStrings.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section3/FixedCapacityStackOfStrings.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="52" selection-end-column="1" />
+              <folding>
+                <element signature="e#402#403#0" expanded="true" />
+                <element signature="e#431#432#0" expanded="true" />
+                <element signature="e#455#456#0" expanded="true" />
+                <element signature="e#479#480#0" expanded="true" />
+                <element signature="e#505#506#0" expanded="true" />
+                <element signature="e#534#535#0" expanded="true" />
+                <element signature="e#565#566#0" expanded="true" />
+                <element signature="e#593#594#0" expanded="true" />
+                <element signature="e#623#624#0" expanded="true" />
+                <element signature="e#657#658#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Date.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section2/Date.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileIndex.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FileIndex.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="479">
+              <caret line="46" column="35" lean-forward="false" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,6 +105,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/kyson/chapter1/section3/FixedCapacityStack.java" />
+        <option value="$PROJECT_DIR$/src/FileIndex.java" />
+        <option value="$PROJECT_DIR$/src/com/kyson/chapter1/section3/FixedCapacityStackOfStrings.java" />
       </list>
     </option>
   </component>
@@ -133,6 +181,20 @@
             </path>
             <path>
               <item name="AlgorithmDemo4Demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgorithmDemo4Demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter1" type="462c0819:PsiDirectoryNode" />
+              <item name="section2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AlgorithmDemo4Demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgorithmDemo4Demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter1" type="462c0819:PsiDirectoryNode" />
+              <item name="section3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AlgorithmDemo4Demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -156,7 +218,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.FixedCapacityStackOfStrings">
+    <configuration name="FixedCapacityStackOfStrings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.kyson.chapter1.section3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.kyson.chapter1.section3.FixedCapacityStackOfStrings" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="AlgorithmDemo" />
+      <envs />
+    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -238,6 +319,11 @@
       <properties />
       <listeners />
     </configuration>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.FixedCapacityStackOfStrings" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -258,12 +344,13 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891247" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20026526" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -291,9 +378,19 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/FileIndex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="46" column="35" lean-forward="false" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section2/SmartDate2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
+        <state relative-caret-position="-1668">
           <caret line="30" column="28" lean-forward="false" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
           <folding>
             <element signature="e#439#466#0" expanded="true" />
@@ -305,9 +402,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section3/FixedCapacityStack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        <state relative-caret-position="418">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section2/Date.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section3/FixedCapacityStackOfStrings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="52" selection-end-column="1" />
+          <folding>
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#431#432#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
