@@ -11,6 +11,14 @@ public class Parentheses {
         return false;
     }
 
-    String isMatch = isMatch()
+    public static void main(String[] args) {
+    	
+    	Parentheses parentheses = new Parentheses();
+    	String stream = "[()]{}{[()()]()}";
+        boolean isMatch = parentheses.isMatch(stream);
+        System.out.println(isMatch);
 
+	}
+
+    
 }
