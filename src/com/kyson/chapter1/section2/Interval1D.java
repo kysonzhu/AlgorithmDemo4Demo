@@ -68,7 +68,7 @@ public class Interval1D {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		ArrayList<Interval1D> interval1ds = new ArrayList<>();
+		ArrayList<Interval1D> interval1ds = new ArrayList<Interval1D>();
 		
 		Interval1D interval1d1 = new Interval1D(3, 5);
 		Interval1D interval1d2 = new Interval1D(4, 5);

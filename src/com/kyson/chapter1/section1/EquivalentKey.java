@@ -1,6 +1,5 @@
 package com.kyson.chapter1.section1;
 
-import java.nio.file.SimpleFileVisitor;
 
 /**
  * 等值键:http://www.jianshu.com/p/a1a9c6b0254c

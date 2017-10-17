@@ -20,7 +20,7 @@ public class FileIndex {
     public static void main(String[] args) {
         // TODO Auto-generated method stub
 
-        HashMap<String, String> map = new HashMap<>();
+        HashMap<String, String> map = new HashMap<String, String>();
 
         /****
          * section 1
