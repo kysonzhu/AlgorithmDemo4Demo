@@ -14,6 +14,7 @@ import com.kyson.chapter1.section2.SmartDate2;
 import com.kyson.chapter1.section2.Transaction;
 import com.kyson.chapter1.section2.VisualCounter;
 import com.kyson.chapter1.section3.FixedCapacityStackOfStrings;
+import com.kyson.chapter1.section3.Stack;
 
 public class FileIndex {
 
@@ -44,9 +45,13 @@ public class FileIndex {
         map.put("1.2.13", Transaction.class.getName());
         map.put("1.2.14", Transaction.class.getName());
 
+        /***
+         * section 3
+         */
         map.put("1.3.1", FixedCapacityStackOfStrings.class.getName());
+        map.put("1.3.2", Stack.class.getName());
 
-
+        
     }
 
 }

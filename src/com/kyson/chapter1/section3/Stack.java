@@ -5,8 +5,8 @@ import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
 /***
- * 给定以下输入，java Stack的输出是什么？
- * it was - the best - of times - - - it was - the - -
+ * 1.3.2 给定以下输入，java Stack的输出是什么？
+ *       it was - the best - of times - - - it was - the - -
  */
 public class Stack<Item> {
 
@@ -101,10 +101,14 @@ public class Stack<Item> {
         //或:first = null
         return N == 0;
     }
+    
+    public int size(){
+    	return N;
+    }
 
     public static void main(String[] args){
 //        String testString = "it was - the best - of times - - - it was - the - -";
-        Stack<String> s = new Stack();
+        Stack<String> s = new Stack<String>();
         while (!StdIn.isEmpty()){
             String item = StdIn.readString();
             if (!item.equals("-")){
