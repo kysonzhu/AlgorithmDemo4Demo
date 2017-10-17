@@ -107,7 +107,7 @@ public class Stack<Item> {
         Stack<String> s = new Stack();
         while (!StdIn.isEmpty()){
             String item = StdIn.readString();
-            if (item.equals("-")){
+            if (!item.equals("-")){
                 s.push(item);
             }else if(!s.isEmpty()){
                 StdOut.print(s.pop() + "");
@@ -115,3 +115,4 @@ public class Stack<Item> {
         }
     }
 }
+
