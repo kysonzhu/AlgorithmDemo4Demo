@@ -27,7 +27,6 @@ public class DoublingStackOfStrings<Item> implements Iterable<Item>{
 	
 	public Item pop()
 	{
-		
 		Item item = items[--N];
 		items[N] = null; 
         if (N > 0 && N == items.length / 4) resize(N * 2);  
@@ -53,9 +52,7 @@ public class DoublingStackOfStrings<Item> implements Iterable<Item>{
 		return new ArrayIterator();
 	}
 	
-	private class ArrayIterator implements Iterator<Item>{
-
-		
+	private class ArrayIterator implements Iterator<Item>{		
 		private int i = N;
 		public boolean hasNext(){
 			return i > 0;
@@ -83,7 +80,6 @@ public class DoublingStackOfStrings<Item> implements Iterable<Item>{
             {  
                 stack.push(inputs[i]);  
             }  
-            
         }  
 		
         for (String s : stack)  
@@ -95,10 +91,4 @@ public class DoublingStackOfStrings<Item> implements Iterable<Item>{
         System.out.println();  
 		
 	}
-
-
-	
-
-	
-	
 }
