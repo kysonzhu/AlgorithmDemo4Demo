@@ -62,6 +62,11 @@ public class DoublingStackOfStrings<Item> implements Iterable<Item>{
 			return items[--i];
 		}
 
+		public void remove() {
+			// TODO Auto-generated method stub
+			
+		}
+
 	}	
 	
 	
