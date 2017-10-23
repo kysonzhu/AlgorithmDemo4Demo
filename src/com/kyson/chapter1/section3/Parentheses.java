@@ -18,8 +18,8 @@ public class Parentheses {
 
 	public static void main(String[] args) {
 
-//		String stream = "[()]{}{[()()]()}";
-		String stream = "[(])";
+		String stream = "[()]{}{[()()]()}";
+//		String stream = "[(])";
 		
 		
 		boolean isPaired = true;

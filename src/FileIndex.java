@@ -15,6 +15,7 @@ import com.kyson.chapter1.section2.Transaction;
 import com.kyson.chapter1.section2.VisualCounter;
 import com.kyson.chapter1.section3.DoublingStackOfStrings;
 import com.kyson.chapter1.section3.FixedCapacityStackOfStrings;
+import com.kyson.chapter1.section3.Parentheses;
 import com.kyson.chapter1.section3.Stack;
 
 public class FileIndex {
@@ -51,6 +52,7 @@ public class FileIndex {
          */
         map.put("1.3.1", FixedCapacityStackOfStrings.class.getName());
         map.put("1.3.2", Stack.class.getName());
+        map.put("1.3.4", Parentheses.class.getName());
         map.put("1.3.8", DoublingStackOfStrings.class.getName());
         
     }
