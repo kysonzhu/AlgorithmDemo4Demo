@@ -1,6 +1,5 @@
 package com.kyson.chapter1.section3;
 
-import java.util.Scanner;
 
 /***
  * 1.3.10 编写一个过滤器InfixToPostfix，将算术表达式由中序表达式转为后序表达式。 1.3.10 Write a filter
@@ -71,7 +70,6 @@ public class InfixToPostfix {
 
 		Stack<String> ops = new Stack<String>();
 		Stack<Double> vals = new Stack<Double>();
-		double result = 0;
 		for (int j = 0; j < expression.length(); j++) {
 			char charAtIndex = expression.charAt(j);
 			String s = String.valueOf(charAtIndex);
