@@ -4,17 +4,19 @@ import java.io.IOException;
 import java.io.PipedOutputStream;
 
 public class PostfixSend implements Runnable{
-
-	private PipedOutputStream pos = null; // 管道输出流
+	// 管道输出流
+	private PipedOutputStream pos = null; 
 
 	private String mInfixString;
 	public PostfixSend(String infixString) {
 		this.mInfixString = infixString;
-		this.pos = new PipedOutputStream(); // 实例化输出流
+		// 实例化输出流
+		this.pos = new PipedOutputStream(); 
 	}
 
 	public void run() {
-		String str = this.mInfixString; // 要输出的内容
+		// 要输出的内容
+		String str = this.mInfixString; 
 		try {
 			this.pos.write(str.getBytes());
 		} catch (IOException e) {
@@ -36,7 +38,6 @@ public class PostfixSend implements Runnable{
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 	}
 

@@ -22,20 +22,21 @@ public class EvaluatePostfix implements OnConvertFinishedReceivedListener {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		PostfixSend s = new PostfixSend("(1+((2+3)*(4*5)))");
 		EvalateReceive r = new EvalateReceive();
 		EvaluatePostfix evaluatePostfix = new EvaluatePostfix();
 		r.setConvertFinishedListener(evaluatePostfix);
 
 		try {
-			s.getPos().connect(r.getPis()); // 连接管道
+			// 连接管道
+			s.getPos().connect(r.getPis()); 
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		new Thread(s).start(); // 启动线程
-		new Thread(r).start(); // 启动线程
+		// 启动线程
+		new Thread(s).start(); 
+		// 启动线程
+		new Thread(r).start();
 	}
 
 	private static int evaluatePostfix(String expression) {
@@ -64,7 +65,8 @@ public class EvaluatePostfix implements OnConvertFinishedReceivedListener {
 				int d2 = stack.pop();
 				int d1 = stack.pop();
 				stack.push(d1 / d2);
-			} else { // number
+			} else { 
+				// number
 				stack.push(Integer.parseInt(param));
 			}
 		}
@@ -72,7 +74,6 @@ public class EvaluatePostfix implements OnConvertFinishedReceivedListener {
 	}
 
 	public void onFinished(String postfixString) {
-		// TODO Auto-generated method stub
 		String resultString = evaluatePostfix(postfixString) + "";
 		System.out.println("计算结果:" + resultString + "");
 	}

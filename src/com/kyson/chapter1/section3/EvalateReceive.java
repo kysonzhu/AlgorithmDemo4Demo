@@ -5,7 +5,8 @@ import java.io.PipedInputStream;
 
 public class EvalateReceive implements Runnable{
 
-	private PipedInputStream pis = null; // 管道输入流
+	// 管道输入流
+	private PipedInputStream pis = null; 
 
 	private OnConvertFinishedReceivedListener mListener; 
 	
@@ -14,7 +15,8 @@ public class EvalateReceive implements Runnable{
 	}
 	
 	public EvalateReceive() {
-		this.pis = new PipedInputStream(); // 实例化输入流
+		// 实例化输入流
+		this.pis = new PipedInputStream(); 
 	}
 
 	public void run() {
@@ -45,11 +47,9 @@ public class EvalateReceive implements Runnable{
 	
 	
 	public static String infixToPostfix(String infixString) {
-		// 双栈
 		String expression = infixString;
 		String resultString = "";
 		Stack<String> ops = new Stack<String>();
-		
 		for (int j = 0; j < expression.length(); j++) {
 			char charAtIndex = expression.charAt(j);
 			String s = String.valueOf(charAtIndex);
