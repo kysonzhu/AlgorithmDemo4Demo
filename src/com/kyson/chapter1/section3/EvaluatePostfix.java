@@ -1,7 +1,6 @@
 package com.kyson.chapter1.section3;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
 import com.kyson.chapter1.section3.EvalateReceive.OnConvertFinishedReceivedListener;
 
@@ -29,48 +28,48 @@ public class EvaluatePostfix implements OnConvertFinishedReceivedListener {
 
 		try {
 			// 连接管道
-			s.getPos().connect(r.getPis()); 
+			s.getPos().connect(r.getPis());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		// 启动线程
-		new Thread(s).start(); 
+		new Thread(s).start();
 		// 启动线程
 		new Thread(r).start();
 	}
 
-	private static int evaluatePostfix(String expression) {
-		ArrayList<String> params = new ArrayList<String>();
+	private static String evaluatePostfix(String expression) {
+		Stack<Double> vals = new Stack<Double>();
 		for (int j = 0; j < expression.length(); j++) {
 			char charAtIndex = expression.charAt(j);
 			String s = String.valueOf(charAtIndex);
-			params.add(s);
+			if (s.equals("+")) {
+				Double valDouble1 = vals.pop();
+				Double valDouble2 = vals.pop();
+				s = valDouble1 + valDouble2 + "";
+				vals.push(Double.parseDouble(s));
+			}else if (s.equals("-")) {
+				Double valDouble1 = vals.pop();
+				Double valDouble2 = vals.pop();
+				s = valDouble1 - valDouble2 + "";
+				vals.push(Double.parseDouble(s));
+			}else if (s.equals("*")) {
+				Double valDouble1 = vals.pop();
+				Double valDouble2 = vals.pop();
+				s = valDouble1 * valDouble2 + "";
+				vals.push(Double.parseDouble(s));
+			}else if (s.equals("/")) {
+				Double valDouble1 = vals.pop();
+				Double valDouble2 = vals.pop();
+				s = valDouble1 / valDouble2 + "";
+				vals.push(Double.parseDouble(s));
+			}else {
+				vals.push(Double.parseDouble(s));
+			}
+
 		}
 
-		Stack<Integer> stack = new Stack<Integer>();
-		for (String param : params) {
-			if (param.equals("+")) {
-				int d2 = stack.pop();
-				int d1 = stack.pop();
-				stack.push(d1 + d2);
-			} else if (param.equals("-")) {
-				int d2 = stack.pop();
-				int d1 = stack.pop();
-				stack.push(d1 - d2);
-			} else if (param.equals("*")) {
-				int d2 = stack.pop();
-				int d1 = stack.pop();
-				stack.push(d1 * d2);
-			} else if (param.equals("/")) {
-				int d2 = stack.pop();
-				int d1 = stack.pop();
-				stack.push(d1 / d2);
-			} else { 
-				// number
-				stack.push(Integer.parseInt(param));
-			}
-		}
-		return stack.pop();
+		return vals.pop().toString();
 	}
 
 	public void onFinished(String postfixString) {
