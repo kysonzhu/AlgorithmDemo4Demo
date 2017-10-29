@@ -18,6 +18,7 @@ import com.kyson.chapter1.section3.FixedCapacityStackOfStrings;
 import com.kyson.chapter1.section3.InfixToPostfix;
 import com.kyson.chapter1.section3.Parentheses;
 import com.kyson.chapter1.section3.Stack;
+import com.kyson.chapter1.section3.Stack2;
 
 public class FileIndex {
 
@@ -57,6 +58,7 @@ public class FileIndex {
 		map.put("1.3.8", DoublingStackOfStrings.class.getName());
 		map.put("1.3.10", InfixToPostfix.class.getName());
 		map.put("1.3.11", EvaluatePostfix.class.getName());
+		map.put("1.3.12", Stack2.class.getName());
 
 	}
 
