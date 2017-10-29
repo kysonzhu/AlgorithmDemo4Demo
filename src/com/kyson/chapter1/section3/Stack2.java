@@ -86,10 +86,18 @@ public class Stack2<Item> implements Iterable<Item> {
 
 	public static Stack2<String> copy(Stack2<String> stack2) {
 		Stack2<String> resultStack = new Stack2<String>();
+		//逆序1
+		Stack2<String> tempStack = new Stack2<String>();
 		Iterator<String> iterator = stack2.iterator();
 		while (iterator.hasNext()) {
-			resultStack.push(iterator.next());
+			tempStack.push(iterator.next());
 		}
+		//逆序2
+		Iterator<String> tempIterator = tempStack.iterator();
+		while (tempIterator.hasNext()) {
+			resultStack.push(tempIterator.next());
+		}
+
 		return resultStack;
 	}
 
@@ -97,17 +105,25 @@ public class Stack2<Item> implements Iterable<Item> {
 		// String testString =
 		// "it was - the best - of times - - - it was - the - -";
 		Stack2<String> stack = new Stack2<String>();
-		stack.push("11");
-		stack.push("112");
-		stack.push("113");
-		stack.push("114");
-		stack.push("115");
-
+		stack.push("我");
+		stack.push("的");
+		stack.push("名字");
+		stack.push("叫");
+		stack.push("顶级程序员不穿女装");
+		stack.push("微博:https://m.weibo.cn/p/1005056186766482");
+		//打印
+		System.out.println("原栈逆序输出:");
+		for (String string : stack) {
+			System.out.print(string);
+		}
+		System.out.println("开始拷贝...");
+		//拷贝
 		Stack2<String> stack2 = Stack2.copy(stack);
-
-		Iterator<String> iterator = stack2.iterator();
-		while (iterator.hasNext()) {
-			System.out.println(iterator.next());
+		System.out.println("拷贝成功");
+		System.out.println("开始打印拷贝后的栈");
+		//创建迭代器
+		for (String string : stack2) {
+			System.out.print(string);
 		}
 
 	}
