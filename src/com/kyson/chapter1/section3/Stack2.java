@@ -116,6 +116,7 @@ public class Stack2<Item> implements Iterable<Item> {
 		for (String string : stack) {
 			System.out.print(string);
 		}
+		System.out.println("");
 		System.out.println("开始拷贝...");
 		//拷贝
 		Stack2<String> stack2 = Stack2.copy(stack);
