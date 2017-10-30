@@ -1,45 +1,47 @@
 package com.kyson.chapter1.section3;
 
-public class Queue<Item> {
-	
+import java.util.Iterator;
+
+public class Queue<Item> implements Iterable<Item> {
+
 	private int N;
-	
-	private class Node{
+
+	private class Node {
 		Item item;
 		Node next;
 	}
-	
+
 	private Node first;
 	private Node last;
-	
-	public Queue(){
-		
+
+	public Queue() {
+
 	}
-	
-	public boolean isEmpty(){
-		if(first == null) return true;
+
+	public boolean isEmpty() {
+		if (first == null)
+			return true;
 		return false;
 	}
-	
-	public int size(){
+
+	public int size() {
 		return N;
 	}
-	
-	public void enqueue(Item item){
+
+	public void enqueue(Item item) {
 		Node oldLast = last;
 		last = new Node();
 		last.item = item;
 		last.next = null;
 		if (this.isEmpty()) {
 			first = last;
-		}else {
+		} else {
 			oldLast.next = last;
 		}
 		N++;
 	}
-	
-	
-	public Item dequeue(){
+
+	public Item dequeue() {
 		Item item = first.item;
 		first = first.next;
 		if (this.isEmpty()) {
@@ -49,11 +51,26 @@ public class Queue<Item> {
 		return item;
 	}
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
+	public Iterator<Item> iterator() {
 		// TODO Auto-generated method stub
+		return new QueueIterator();
+	}
+
+	private class QueueIterator implements Iterator<Item> {
+
+		public boolean hasNext() {
+			// TODO Auto-generated method stub
+			return false;
+		}
+
+		public Item next() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+	}
+
+	public static void main(String[] args) {
 
 	}
 
