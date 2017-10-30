@@ -3,10 +3,9 @@ package com.kyson.chapter1.section3;
 import java.util.Iterator;
 
 /***
+ * 1.3.6 下面这段代码对队列q进行了什么操作？
  * 
- * @author kyson
- *
- * @param <Item>
+ * 1.3.6 What does the following code fragment do to the queue q?
  */
 public class Queue<Item> implements Iterable<Item> {
 
@@ -76,8 +75,8 @@ public class Queue<Item> implements Iterable<Item> {
 
 		public void remove() {
 			// TODO Auto-generated method stub
-			
-		}		
+
+		}
 
 	}
 
@@ -88,28 +87,26 @@ public class Queue<Item> implements Iterable<Item> {
 		stringQueue.enqueue("名字");
 		stringQueue.enqueue("叫顶级程序员不穿女装");
 		stringQueue.enqueue("微博:https://m.weibo.cn/p/1005056186766482");
-		
-//		System.out.println(stringQueue.dequeue());
-//		System.out.println(stringQueue.dequeue());
-//		System.out.println(stringQueue.dequeue());
-//		System.out.println(stringQueue.dequeue());
-//		System.out.println(stringQueue.dequeue());
-//		System.out.println(stringQueue.dequeue());
-		
-		
+
+		// System.out.println(stringQueue.dequeue());
+		// System.out.println(stringQueue.dequeue());
+		// System.out.println(stringQueue.dequeue());
+		// System.out.println(stringQueue.dequeue());
+		// System.out.println(stringQueue.dequeue());
+		// System.out.println(stringQueue.dequeue());
+
 		Stack<String> stack = new Stack<String>();
 		while (!stringQueue.isEmpty())
-		    stack.push(stringQueue.dequeue());
+			stack.push(stringQueue.dequeue());
 		while (!stack.isEmpty())
 			stringQueue.enqueue(stack.pop());
-		
-		
+
 		System.out.println(stringQueue.dequeue());
 		System.out.println(stringQueue.dequeue());
 		System.out.println(stringQueue.dequeue());
 		System.out.println(stringQueue.dequeue());
 		System.out.println(stringQueue.dequeue());
-		
+
 	}
 
 }
