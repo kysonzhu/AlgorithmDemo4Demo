@@ -82,7 +82,34 @@ public class Queue<Item> implements Iterable<Item> {
 	}
 
 	public static void main(String[] args) {
-
+		Queue<String> stringQueue = new Queue<String>();
+		stringQueue.enqueue("我");
+		stringQueue.enqueue("的");
+		stringQueue.enqueue("名字");
+		stringQueue.enqueue("叫顶级程序员不穿女装");
+		stringQueue.enqueue("微博:https://m.weibo.cn/p/1005056186766482");
+		
+//		System.out.println(stringQueue.dequeue());
+//		System.out.println(stringQueue.dequeue());
+//		System.out.println(stringQueue.dequeue());
+//		System.out.println(stringQueue.dequeue());
+//		System.out.println(stringQueue.dequeue());
+//		System.out.println(stringQueue.dequeue());
+		
+		
+		Stack<String> stack = new Stack<String>();
+		while (!stringQueue.isEmpty())
+		    stack.push(stringQueue.dequeue());
+		while (!stack.isEmpty())
+			stringQueue.enqueue(stack.pop());
+		
+		
+		System.out.println(stringQueue.dequeue());
+		System.out.println(stringQueue.dequeue());
+		System.out.println(stringQueue.dequeue());
+		System.out.println(stringQueue.dequeue());
+		System.out.println(stringQueue.dequeue());
+		
 	}
 
 }
