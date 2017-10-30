@@ -2,6 +2,12 @@ package com.kyson.chapter1.section3;
 
 import java.util.Iterator;
 
+/***
+ * 
+ * @author kyson
+ *
+ * @param <Item>
+ */
 public class Queue<Item> implements Iterable<Item> {
 
 	private int N;
@@ -67,6 +73,11 @@ public class Queue<Item> implements Iterable<Item> {
 			// TODO Auto-generated method stub
 			return null;
 		}
+
+		public void remove() {
+			// TODO Auto-generated method stub
+			
+		}		
 
 	}
 
