@@ -38,7 +38,7 @@ public class Date1 {
 			q.enqueue(date1);
 		}
 		int N = q.size();
-		Date1[] a = (Date1[]) new Date1[N];
+		Date1[] a = new Date1[N];
 		for (int i = 0; i < N; i++)
 			a[i] = q.dequeue();
 		return a;
