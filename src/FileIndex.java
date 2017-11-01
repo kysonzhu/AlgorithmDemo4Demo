@@ -12,11 +12,13 @@ import com.kyson.chapter1.section2.SmartDate1;
 import com.kyson.chapter1.section2.SmartDate2;
 import com.kyson.chapter1.section2.Transaction;
 import com.kyson.chapter1.section2.VisualCounter;
+import com.kyson.chapter1.section3.Date1;
 import com.kyson.chapter1.section3.DoublingStackOfStrings;
 import com.kyson.chapter1.section3.EvaluatePostfix;
 import com.kyson.chapter1.section3.FixedCapacityStackOfStrings;
 import com.kyson.chapter1.section3.InfixToPostfix;
 import com.kyson.chapter1.section3.Parentheses;
+import com.kyson.chapter1.section3.QueueExecise1;
 import com.kyson.chapter1.section3.ResizingArrayQueueOfStrings;
 import com.kyson.chapter1.section3.Stack;
 import com.kyson.chapter1.section3.Stack2;
@@ -61,6 +63,8 @@ public class FileIndex {
 		map.put("1.3.11", EvaluatePostfix.class.getName());
 		map.put("1.3.12", Stack2.class.getName());
 		map.put("1.3.14", ResizingArrayQueueOfStrings.class.getName());
+		map.put("1.3.15", QueueExecise1.class.getName());
+		map.put("1.3.16", Date1.class.getName());
 
 	}
 
