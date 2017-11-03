@@ -1,44 +1,51 @@
 package com.kyson.chapter1.section3;
 
-/**
+/***
+ * 1.3.20 编写一个方法delete()，接受一个int参数k，删除链表的第k个元素（如果它存在的话）。
  * 
- * 1.3.19 给出一段代码，删除链表的尾结点，其中链表的首结点为first。
+ * 1.3.20 Write a method delete() that takes an int argument k and deletes the
+ * kth element in a linked list, if it exists.
  * 
- * 1.3.19 Give a code fragment that removes the last node in a linked list whose
- * first node is first.
- *
  */
-public class LinkedListExercise1<Item> {
+public class LinkedListExecise2<Item> {
 
-	// 节点
 	private static class Node<Item> {
-		Node<Item> next;
+		Node next;
 		Item item;
 	}
 
-	public Node<Item> deleteLastNode(Node<Item> first) {
+	public Node<Item> delete(int k, Node<Item> first) throws Exception {
 		if (first == null) {
 			return null;
 		}
-		//current是当前遍历到的节点
-		Node<Item> current = first;
-		if (current.next == null) {
-			first = null;
+		Node<Item> current1 = first;
+		int count = 0;
+		while (current1.next != null) {
+			current1 = current1.next;
+			count++;
 		}
-		//secondLast 倒数第二个节点
-		Node<Item> secondLast = first;
-		while (current.next != null) {
-			//这里是引用，操作secondLast就是操作链表本身
-			secondLast = current;
-			current = current.next;
+		if (k >= count) {
+			throw new Exception();
 		}
-		//这里是引用，操作secondLast就是操作链表本身
-		secondLast.next = null;
+
+		Node<Item> current2 = first;
+		if (k == 0) {
+			first = first.next;
+			return first;
+		}
+		
+		int index = 0;
+		while (current2.next != null) {
+			if (index == k - 1) {
+				current2.next = current2.next.next;
+			}
+			current2 = current2.next;
+			index++;
+		}
 		return first;
 	}
 
 	public static void main(String[] args) {
-
 		/**
 		 * 创建链表
 		 * */
@@ -57,8 +64,8 @@ public class LinkedListExercise1<Item> {
 		forth.next = fifth;
 		fifth.item = "微博:https://m.weibo.cn/p/1005056186766482";
 		fifth.next = null;
-		
-		//删除尾节点之前
+
+		// 删除尾节点之前
 		System.out.println("原链表：\n-------");
 		Node current1 = first;
 		while (current1.next != null) {
@@ -68,12 +75,19 @@ public class LinkedListExercise1<Item> {
 		System.out.println(current1.item);
 		System.out.println("-------");
 
-		LinkedListExercise1<String> linkedListExercise1 = new LinkedListExercise1<String>();
-		//删除最后一个元素
-		System.out.println("正在删除链表最后一个节点...");
-		Node<String> resultNode = linkedListExercise1.deleteLastNode(first);
+		LinkedListExecise2<String> linkedListExercise2 = new LinkedListExecise2<String>();
+		// 删除最后一个元素
+		int k = 0;
+		System.out.println("正在删除链表第" + k + "个节点...");
+		Node<String> resultNode = null;
+		try {
+			resultNode = linkedListExercise2.delete(k,first);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		System.out.println("删除成功");
-		
+
 		System.out.println("新链表：\n-------");
 		Node current2 = resultNode;
 		while (current2.next != null) {
@@ -82,6 +96,7 @@ public class LinkedListExercise1<Item> {
 		}
 		System.out.println(current2.item);
 		System.out.println("-------");
+
 	}
 
 }
