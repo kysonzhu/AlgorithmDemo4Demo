@@ -14,36 +14,65 @@ public class LinkedListExecise2<Item> {
 		Item item;
 	}
 
-	public Node<Item> delete(int k, Node<Item> first) throws Exception {
-		if (first == null) {
-			return null;
-		}
-		Node<Item> current1 = first;
-		int count = 0;
-		while (current1.next != null) {
-			current1 = current1.next;
-			count++;
-		}
-		if (k >= count) {
-			throw new Exception();
-		}
-
-		Node<Item> current2 = first;
-		if (k == 0) {
-			first = first.next;
+	/**
+	 * 
+	 * @param k 第K个元素
+	 * @param first 链表的首节点
+	 * @return 新的链表
+	 * @throws Exception 
+	 */
+//	public Node<Item> delete(int k, Node<Item> first) throws Exception {
+//	    if (k <= 0 || first == null) return null; 
+//	    
+//		Node<Item> current1 = first;
+//		int count = 0;
+//		//先计算链表总长度
+//		while (current1.next != null) {
+//			current1 = current1.next;
+//			count++;
+//		}
+//		//如果K的大小大于总长度 ，抛出异常
+//		if (k >= count) {
+//			throw new Exception();
+//		}
+//
+//		Node<Item> current2 = first;
+//		if (k == 0) {
+//			first = first.next;
+//			return first;
+//		}
+//		
+//		int index = 0;
+//		while (current2.next != null) {
+//			if (index == k - 1) {
+//				current2.next = current2.next.next;
+//			}
+//			current2 = current2.next;
+//			index++;
+//		}
+//		return first;
+//	}
+	
+	
+	public Node<Item> delete(int k, Node<Item> first) throws Exception{
+	    if (k < 0 || first == null) return null; 
+	    if (k == 0) {
+	    	first = first.next;
 			return first;
 		}
-		
-		int index = 0;
-		while (current2.next != null) {
-			if (index == k - 1) {
-				current2.next = current2.next.next;
-			}
-			current2 = current2.next;
-			index++;
+	    Node<Item> current = first;
+	    while (current != null && --k != 0) {
+			current = current.next;
 		}
+	    if (k!= 0 || current.next == null || current == null) {
+	    	throw new Exception();
+		}else {
+		    current.next = current.next.next;
+		}
+	    
 		return first;
 	}
+	
 
 	public static void main(String[] args) {
 		/**
@@ -76,8 +105,8 @@ public class LinkedListExecise2<Item> {
 		System.out.println("-------");
 
 		LinkedListExecise2<String> linkedListExercise2 = new LinkedListExecise2<String>();
-		// 删除最后一个元素
-		int k = 0;
+		// 删除第一个元素
+		int k = 4;
 		System.out.println("正在删除链表第" + k + "个节点...");
 		Node<String> resultNode = null;
 		try {

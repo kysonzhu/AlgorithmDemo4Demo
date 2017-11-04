@@ -8,7 +8,7 @@ package com.kyson.chapter1.section3;
  * first node is first.
  *
  */
-public class LinkedListExercise1<Item> {
+public class LinkedListExecise1<Item> {
 
 	// 节点
 	private static class Node<Item> {
@@ -24,6 +24,7 @@ public class LinkedListExercise1<Item> {
 		Node<Item> current = first;
 		if (current.next == null) {
 			first = null;
+			return first;
 		}
 		//secondLast 倒数第二个节点
 		Node<Item> secondLast = first;
@@ -68,7 +69,7 @@ public class LinkedListExercise1<Item> {
 		System.out.println(current1.item);
 		System.out.println("-------");
 
-		LinkedListExercise1<String> linkedListExercise1 = new LinkedListExercise1<String>();
+		LinkedListExecise1<String> linkedListExercise1 = new LinkedListExecise1<String>();
 		//删除最后一个元素
 		System.out.println("正在删除链表最后一个节点...");
 		Node<String> resultNode = linkedListExercise1.deleteLastNode(first);
