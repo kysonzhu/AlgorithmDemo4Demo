@@ -17,8 +17,9 @@ import com.kyson.chapter1.section3.DoublingStackOfStrings;
 import com.kyson.chapter1.section3.EvaluatePostfix;
 import com.kyson.chapter1.section3.FixedCapacityStackOfStrings;
 import com.kyson.chapter1.section3.InfixToPostfix;
-import com.kyson.chapter1.section3.LinkedListExecise2;
 import com.kyson.chapter1.section3.LinkedListExecise1;
+import com.kyson.chapter1.section3.LinkedListExecise2;
+import com.kyson.chapter1.section3.LinkedListExecise3;
 import com.kyson.chapter1.section3.Parentheses;
 import com.kyson.chapter1.section3.QueueExecise1;
 import com.kyson.chapter1.section3.ResizingArrayQueueOfStrings;
@@ -69,6 +70,7 @@ public class FileIndex {
 		map.put("1.3.16", Date1.class.getName());
 		map.put("1.3.19", LinkedListExecise1.class.getName());
 		map.put("1.3.20", LinkedListExecise2.class.getName());
+		map.put("1.3.21", LinkedListExecise3.class.getName());
 
 	}
 
