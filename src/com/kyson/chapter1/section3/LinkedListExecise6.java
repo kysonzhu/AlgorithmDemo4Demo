@@ -1,7 +1,5 @@
 package com.kyson.chapter1.section3;
 
-import java.awt.event.ItemEvent;
-
 /***
  * 1.3.26 编写一个方法remove()，接受一个链表和一个字符串key作为参数，删除链表中所有item域为key的结点。
  * 
@@ -26,18 +24,19 @@ public class LinkedListExecise6 {
 	}
 
 	public Node remove(Node first, String key) {
+		// 判断链表是否为空
 		if (first == null) {
 			return null;
 		}
+		// 判断链表是否只有一个元素
 		if (first.next == null && first.item.equals(key)) {
 			return null;
 		}
-		
+
 		Node current = first;
-		while (current.next != null) 
-		{
-			if (current.next.item.equals(key))
-			{
+		// 找到符合条件的链表并删除它
+		while (current.next != null) {
+			if (current.next.item.equals(key)) {
 				current.next = current.next.next;
 			}
 			current = current.next;
