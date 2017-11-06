@@ -23,26 +23,47 @@ public class LinkedListExecise6 {
 		}
 	}
 
+//	public Node remove(Node first, String key) {
+//		// 判断链表是否为空
+//		if (first == null) {
+//			return null;
+//		}
+//		// 判断链表是否只有一个元素
+//		if (first.next == null && first.item.equals(key)) {
+//			return null;
+//		}
+//		
+//		if (first.item.equals(key)) {
+//			return first.next;
+//		}
+//
+//		Node current = first;
+//		// 找到符合条件的链表并删除它
+//		while (current.next != null) {
+//			if (current.next.item.equals(key)) {
+//				current.next = current.next.next;
+//			}
+//			current = current.next;
+//		}
+//
+//		return first;
+//	}
+	
 	public Node remove(Node first, String key) {
-		// 判断链表是否为空
-		if (first == null) {
-			return null;
-		}
-		// 判断链表是否只有一个元素
-		if (first.next == null && first.item.equals(key)) {
-			return null;
-		}
-
-		Node current = first;
-		// 找到符合条件的链表并删除它
+		Node newFirst = new Node();
+		newFirst.next = first;
+		
+		Node current = newFirst;
 		while (current.next != null) {
 			if (current.next.item.equals(key)) {
 				current.next = current.next.next;
+			}else {
+				current = current.next;
 			}
-			current = current.next;
 		}
-
-		return first;
+		
+		return newFirst.next;
+	
 	}
 
 	/**
@@ -71,7 +92,7 @@ public class LinkedListExecise6 {
 		fifth.next = null;
 
 		LinkedListExecise6 linkedListExercise6 = new LinkedListExecise6();
-		Node resultNode = linkedListExercise6.remove(first, "叫");
+		Node resultNode = linkedListExercise6.remove(first, "我的");
 
 		System.out.println("新链表：\n-------");
 		Node current2 = resultNode;
