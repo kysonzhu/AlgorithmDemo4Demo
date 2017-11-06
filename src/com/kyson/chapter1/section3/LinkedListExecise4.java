@@ -28,7 +28,7 @@ public class LinkedListExecise4<Item> {
 
 		Node current = first;
 		while (current != null) {
-			if (current.item.equals(node.item)) 
+			if (current.equals(node)) 
 			{
 				if (current.next != null) 
 				{
@@ -66,7 +66,7 @@ public class LinkedListExecise4<Item> {
 		forth.next = fifth;
 		fifth.item = "微博:https://m.weibo.cn/p/1005056186766482";
 		fifth.next = null;
-
+		
 		LinkedListExecise4<String> linkedListExercise4 = new LinkedListExecise4<String>();
 		Node targetNode = first;
 		System.out.println("即将移除节点:"+targetNode+"之后的节点");
@@ -74,11 +74,11 @@ public class LinkedListExecise4<Item> {
 
 		System.out.println("新链表：\n-------");
 		Node current2 = resultNode;
-		while (current2.next != null) {
+		while (current2 != null) {
 			System.out.println(current2.item);
 			current2 = current2.next;
 		}
-		System.out.println(current2.item);
+		System.out.println(current2);
 		System.out.println("-------");
 	}
 

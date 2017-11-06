@@ -58,14 +58,15 @@ public class LinkedListExecise7 {
 		Node forth = new Node();
 		Node fifth = new Node();
 		first.item = 1;
-		first.next = second;
 		second.item = 3;
-		second.next = third;
 		third.item = 999;
-		third.next = forth;
 		forth.item = 33;
-		forth.next = fifth;
 		fifth.item = 21;
+
+		first.next = second;
+		second.next = third;
+		third.next = forth;
+		forth.next = fifth;
 		fifth.next = null;
 
 		System.out.println("原链表：\n-------");
