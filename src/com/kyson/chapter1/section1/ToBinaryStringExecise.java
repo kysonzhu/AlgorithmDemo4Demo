@@ -10,14 +10,14 @@ package com.kyson.chapter1.section1;
  */
 public class ToBinaryStringExecise {
 
-	public static String binaryToDecimal(int n) {
+	public static String decimalToBinary(int n) {
 		String resultString = "";
 		for (int i = 31; i >= 0; i--)
 			resultString = resultString + (n >>> i & 1);
 		return resultString;
 	}
 
-	public static void binaryToDecimal2(int n) {
+	public static void decimalToBinary2(int n) {
 		for (int i = 31; i >= 0; i--)
 			System.out.print(n >>> i & 1);
 	}
@@ -27,8 +27,11 @@ public class ToBinaryStringExecise {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String resultString = binaryToDecimal(4);
-		System.out.println(resultString);
+//		String resultString = binaryToDecimal(4);
+//		System.out.println(resultString);
+		
+		System.out.println(1>>>1);
+		System.out.println(2>>>1);
 	}
 
 }
