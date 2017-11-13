@@ -12,6 +12,7 @@ import com.kyson.chapter1.section2.SmartDate1;
 import com.kyson.chapter1.section2.SmartDate2;
 import com.kyson.chapter1.section2.Transaction;
 import com.kyson.chapter1.section2.VisualCounter;
+import com.kyson.chapter1.section3.CircularLinkedListQueue;
 import com.kyson.chapter1.section3.Date1;
 import com.kyson.chapter1.section3.DoublingStackOfStrings;
 import com.kyson.chapter1.section3.EvaluatePostfix;
@@ -24,6 +25,7 @@ import com.kyson.chapter1.section3.LinkedListExecise4;
 import com.kyson.chapter1.section3.LinkedListExecise5;
 import com.kyson.chapter1.section3.LinkedListExecise6;
 import com.kyson.chapter1.section3.LinkedListExecise7;
+import com.kyson.chapter1.section3.LinkedListExecise8;
 import com.kyson.chapter1.section3.Parentheses;
 import com.kyson.chapter1.section3.QueueExecise1;
 import com.kyson.chapter1.section3.ResizingArrayQueueOfStrings;
@@ -79,6 +81,8 @@ public class FileIndex {
 		map.put("1.3.25", LinkedListExecise5.class.getName());
 		map.put("1.3.26", LinkedListExecise6.class.getName());
 		map.put("1.3.27", LinkedListExecise7.class.getName());
+		map.put("1.3.29", CircularLinkedListQueue.class.getName());
+		map.put("1.3.30", LinkedListExecise8.class.getName());
 
 	}
 
