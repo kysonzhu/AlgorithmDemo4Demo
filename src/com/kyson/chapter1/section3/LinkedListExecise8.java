@@ -30,7 +30,7 @@ public class LinkedListExecise8<Item> {
 	}
 	
 	
-	public static Node reverseLinkedList(Node x){
+	public static Node reverse(Node x){
 		Node first = x;
 		Node reverse = null;
 		while(first != null){
@@ -63,7 +63,7 @@ public class LinkedListExecise8<Item> {
 		fifth.item = "微博:https://m.weibo.cn/p/1005056186766482";
 		fifth.next = null;
 		
-		Node newFirst = reverseLinkedList(first);
+		Node newFirst = reverse(first);
 		Node current = newFirst;
 		while (current != null) {
 			System.out.println(current.item);
