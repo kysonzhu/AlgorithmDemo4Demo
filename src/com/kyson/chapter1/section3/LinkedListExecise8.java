@@ -30,17 +30,17 @@ public class LinkedListExecise8<Item> {
 	}
 	
 	
-	public static Node reverseLinkedList(Node first){
-		Node oldFirst = first;
-		first = null;
-		while(oldFirst != null){
-	        Node second = oldFirst.next;  
-	        oldFirst.next = first;  
-	        first = oldFirst;  
-	        oldFirst = second;  			
+	public static Node reverseLinkedList(Node x){
+		Node first = x;
+		Node reverse = null;
+		while(first != null){
+	        Node second = first.next;  
+	        first.next = reverse;  
+	        reverse = first;  
+	        first = second;  			
 		}
 		
-		return first;
+		return reverse;
 	}
 
 	public static void main(String[] args) {
