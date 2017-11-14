@@ -12,7 +12,7 @@ public class Logarithmic {
 		if (N == 0)
 			return 0;
 		if (N == 1)
-			return 1;
+			return 0;
 		return (logarithmic1(N - 1)  + Math.log(N));
 	}
 	
