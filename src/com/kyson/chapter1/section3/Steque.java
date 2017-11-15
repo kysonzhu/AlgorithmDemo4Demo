@@ -84,7 +84,28 @@ public class Steque<Item> implements Iterable<Item>{
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		Steque<String> stringSteque1 = new Steque<String>();
+		stringSteque1.enqueue("我");
+		stringSteque1.enqueue("的");
+		stringSteque1.enqueue("名字");
+		stringSteque1.enqueue("叫顶级程序员不穿女装");
+		stringSteque1.enqueue("微博:https://m.weibo.cn/p/1005056186766482");
+		
+		for (String string : stringSteque1) {
+			System.out.println(string);
+		}
+		
+		Steque<String> stringSteque2 = new Steque<String>();
+		stringSteque2.push("我");
+		stringSteque2.push("的");
+		stringSteque2.push("名字");
+		stringSteque2.push("叫顶级程序员不穿女装");
+		stringSteque2.push("微博:https://m.weibo.cn/p/1005056186766482");
+		
+		for (String string : stringSteque2) {
+			System.out.println(string);
+		}
+		
 	}
 
 }
