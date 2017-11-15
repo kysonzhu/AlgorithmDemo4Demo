@@ -78,7 +78,12 @@ public class Steque<Item> implements Iterable<Item>{
             Item x = current.item;  
             current = current.next;  
             return x;  
-        }  
+        }
+
+		public void remove() {
+			// TODO Auto-generated method stub
+			
+		}  
     } 
 	
 	
