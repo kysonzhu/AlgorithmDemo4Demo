@@ -31,6 +31,7 @@ import com.kyson.chapter1.section3.QueueExecise1;
 import com.kyson.chapter1.section3.ResizingArrayQueueOfStrings;
 import com.kyson.chapter1.section3.Stack;
 import com.kyson.chapter1.section3.Stack2;
+import com.kyson.chapter1.section3.Steque;
 
 public class FileIndex {
 
@@ -83,6 +84,8 @@ public class FileIndex {
 		map.put("1.3.27", LinkedListExecise7.class.getName());
 		map.put("1.3.29", CircularLinkedListQueue.class.getName());
 		map.put("1.3.30", LinkedListExecise8.class.getName());
+		
+		map.put("1.3.32", Steque.class.getName());
 
 	}
 
