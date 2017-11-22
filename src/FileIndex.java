@@ -17,7 +17,9 @@ import com.kyson.chapter1.section3.Date1;
 import com.kyson.chapter1.section3.DoublingStackOfStrings;
 import com.kyson.chapter1.section3.EvaluatePostfix;
 import com.kyson.chapter1.section3.FixedCapacityStackOfStrings;
+import com.kyson.chapter1.section3.GeneralizedQueue;
 import com.kyson.chapter1.section3.InfixToPostfix;
+import com.kyson.chapter1.section3.Josephus;
 import com.kyson.chapter1.section3.LinkedListExecise1;
 import com.kyson.chapter1.section3.LinkedListExecise2;
 import com.kyson.chapter1.section3.LinkedListExecise3;
@@ -90,7 +92,9 @@ public class FileIndex {
 		map.put("1.3.32", Steque.class.getName());
 		map.put("1.3.34", RandomBag.class.getName());
 		map.put("1.3.35", RandomQueue.class.getName());
-		 
+		map.put("1.3.37", Josephus.class.getName());
+		map.put("1.3.38", GeneralizedQueue.class.getName());
+		
 	}
 
 }
