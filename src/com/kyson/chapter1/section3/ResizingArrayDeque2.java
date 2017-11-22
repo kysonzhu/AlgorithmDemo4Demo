@@ -17,73 +17,135 @@ import java.util.Iterator;
  * a resizing array.
  * 
  */
+public class ResizingArrayDeque2<Item> implements Iterable<Item> {
 
-public class ResizingArrayDeque2<Item> implements Iterable<Item>{
-
-	private int head;
-	private int tail;
 	private Item[] a;
-	
-	public ResizingArrayDeque2(){
-		a = (Item[])(new Object[2]);
-		head = 0;
-		tail = 0;
-	}
-	
-	public boolean isEmpty(){
+
+	private int head = 1;
+	private int tail = 1;
+
+	public boolean isEmpty() {
 		return head == tail;
 	}
-	
-	public int size(){
+
+	public ResizingArrayDeque2(int cap) {
+		a = (Item[]) (new Object[cap]);
+	}
+
+	public int size() {
 		return tail - head;
 	}
-	
-	public void pushLeft(Item x){
-		
-	}
-	
-	public void pushRight(Item x){
-		
-	}
-	
-	public Item popLeft(){
-		return null;
-	}
-	
-	public Item popRight(){
-		return null;
-	}
-	
-	private void resize(int max){
-		
+
+	public void pushLeft(Item item) {
+		if (head == 0) {
+			resize(3 * size());
+		}
+		a[--head] = item;
 	}
 
-	public ResizingArrayDequeIterator iterator(){
-		return new ResizingArrayDequeIterator();
+	private void resize(int max) {
+		if (max < 3) {
+			max = 3;
+		}
+		Item tmp[] = (Item[]) new Object[max];
+		int j = max / 3;
+
+		for (int i = head; i < tail; i++) {
+			tmp[j++] = a[i];
+		}
+		a = tmp;
+		head = max / 3;
+		tail = j;
 	}
-	
-	private class ResizingArrayDequeIterator implements Iterator<Item>
-	{
+
+	public void pushRight(Item item) {
+		if (tail == a.length) {
+			resize(3 * size());
+		}
+		a[tail++] = item;
+	}
+
+	public Item popLeft() {
+		if (isEmpty()) {
+			return null;
+		}
+		if (size() * 6 < a.length) {
+			resize(size() * 3);
+		}
+		return a[head++];
+	}
+
+	public Item popRight() {
+		if (isEmpty()) {
+			return null;
+		}
+		if (size() * 6 < a.length) {
+			resize(size() * 3);
+		}
+		return a[--tail];
+	}
+
+	public Iterator<Item> iterator() {
+		return new DequeIterator();
+	}
+
+	private class DequeIterator implements Iterator<Item> {
+
+		private int index = head;
 
 		public boolean hasNext() {
-			// TODO Auto-generated method stub
-			return false;
+			return index < tail;
 		}
 
 		public Item next() {
-			// TODO Auto-generated method stub
-			return null;
+			Item x = a[index++];
+			return x;
 		}
-		
+
+		public void remove() {
+
+		}
+
 	}
-	
-	
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		ResizingArrayDeque2<String> deque = new ResizingArrayDeque2<String>(10);
+		deque.pushRight("我");
+		deque.pushRight("的");
+		deque.pushRight("名字");
+		deque.pushRight("叫顶级程序员不穿女装");
+		deque.pushRight("微博:https://m.weibo.cn/p/1005056186766482");
+
+		for (String string : deque) {
+			System.out.println(string);
+		}
+		System.out.println("===========================");
+
+		ResizingArrayDeque2<String> deque1 = new ResizingArrayDeque2<String>(10);
+		deque1.pushLeft("我");
+		deque1.pushLeft("的");
+		deque1.pushLeft("名字");
+		deque1.pushLeft("叫顶级程序员不穿女装");
+		deque1.pushLeft("微博:https://m.weibo.cn/p/1005056186766482");
+
+		for (String string : deque1) {
+			System.out.println(string);
+		}
+		System.out.println("===========================");
+
+		deque.popLeft();
+
+		for (String string : deque) {
+			System.out.println(string);
+		}
+
+		System.out.println("===========================");
+		deque1.popRight();
+
+		for (String string : deque1) {
+			System.out.println(string);
+		}
 
 	}
 
 }
-
-
