@@ -17,10 +17,11 @@ public class EquivalentKey {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		
+		//有序数组
 		int[] N = {1,2,3,4,5,5,5,6,7,8,9,89,89,100};
 		
 		System.out.println(rank(5,N) + "");
+		
 		System.out.println(count(5,N) +"");
 		
 	}
