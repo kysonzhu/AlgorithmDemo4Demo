@@ -3,6 +3,7 @@ import java.util.HashMap;
 import com.kyson.chapter1.section1.DumplicateElements;
 import com.kyson.chapter1.section1.EquivalentKey;
 import com.kyson.chapter1.section1.Histogram;
+import com.kyson.chapter1.section1.HistogramSample;
 import com.kyson.chapter1.section2.BinarySearchCounter;
 import com.kyson.chapter1.section2.CircularRotation;
 import com.kyson.chapter1.section2.Interval1D;
@@ -48,6 +49,8 @@ public class FileIndex {
 		 * section 1
 		 */
 		// 找到重复元素
+
+		map.put("1.1.15", HistogramSample.class.getName());
 		map.put("1.1.28", DumplicateElements.class.getName());
 		map.put("1.1.29", EquivalentKey.class.getName());
 		map.put("1.1.32", Histogram.class.getName());
@@ -88,13 +91,13 @@ public class FileIndex {
 		map.put("1.3.27", LinkedListExecise7.class.getName());
 		map.put("1.3.29", CircularLinkedListQueue.class.getName());
 		map.put("1.3.30", LinkedListExecise8.class.getName());
-		
+
 		map.put("1.3.32", Steque.class.getName());
 		map.put("1.3.34", RandomBag.class.getName());
 		map.put("1.3.35", RandomQueue.class.getName());
 		map.put("1.3.37", Josephus.class.getName());
 		map.put("1.3.38", GeneralizedQueue.class.getName());
-		
+
 	}
 
 }

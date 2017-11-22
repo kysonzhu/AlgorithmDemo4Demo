@@ -27,9 +27,13 @@ public class Josephus {
 		for (int i = 0; i < N; i++)
 			queue.enqueue(i);
 
-		while (!queue.isEmpty()) {
+		while (!queue.isEmpty())
+		{
 			for (int i = 0; i < m - 1; i++)
-				queue.enqueue(queue.dequeue());
+			{
+				Integer item = queue.dequeue();
+				queue.enqueue(item);
+			}
 			StdOut.print(queue.dequeue() + " ");
 		}
 		
