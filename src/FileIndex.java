@@ -1,5 +1,6 @@
 import java.util.HashMap;
 
+import com.kyson.chapter1.section1.BinomialSample;
 import com.kyson.chapter1.section1.DumplicateElements;
 import com.kyson.chapter1.section1.EquivalentKey;
 import com.kyson.chapter1.section1.Histogram;
@@ -51,6 +52,7 @@ public class FileIndex {
 		// 找到重复元素
 
 		map.put("1.1.15", HistogramSample.class.getName());
+		map.put("1.1.27", BinomialSample.class.getName());
 		map.put("1.1.28", DumplicateElements.class.getName());
 		map.put("1.1.29", EquivalentKey.class.getName());
 		map.put("1.1.32", Histogram.class.getName());
