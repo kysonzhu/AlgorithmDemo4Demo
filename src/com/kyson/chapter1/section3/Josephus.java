@@ -24,11 +24,11 @@ public class Josephus {
 		int N = 41;
 
 		Queue<Integer> queue = new Queue<Integer>();
-		for (int i = 1; i <= N; i++)
+		for (int i = 0; i < N; i++)
 			queue.enqueue(i);
 
 		while (!queue.isEmpty()) {
-			for (int i = 1; i <= m - 1; i++)
+			for (int i = 0; i < m - 1; i++)
 				queue.enqueue(queue.dequeue());
 			StdOut.print(queue.dequeue() + " ");
 		}
