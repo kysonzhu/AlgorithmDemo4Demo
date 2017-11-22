@@ -45,16 +45,6 @@ public class Recursion {
 	public static void main(String[] args) {
 
 		/***
-		 * 1.1.15
-		 */
-		System.out.println("1.1.15 的输出:");
-		int a[] = { 1, 2, 3, 4, 4, 5, 6, 8, 8 };
-		int[] result = histogram(a, 10);
-		for (int i = 0; i < result.length; i++) {
-			System.out.println(result[i]);
-		}
-
-		/***
 		 * 1.1.16
 		 */
 		System.out.println("1.1.16:");
