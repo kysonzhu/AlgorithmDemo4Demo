@@ -35,6 +35,7 @@ import com.kyson.chapter1.section3.QueueExecise1;
 import com.kyson.chapter1.section3.RandomBag;
 import com.kyson.chapter1.section3.RandomQueue;
 import com.kyson.chapter1.section3.ResizingArrayQueueOfStrings;
+import com.kyson.chapter1.section3.RingBuffer;
 import com.kyson.chapter1.section3.Stack;
 import com.kyson.chapter1.section3.Stack2;
 import com.kyson.chapter1.section3.Steque;
@@ -99,6 +100,7 @@ public class FileIndex {
 		map.put("1.3.35", RandomQueue.class.getName());
 		map.put("1.3.37", Josephus.class.getName());
 		map.put("1.3.38", GeneralizedQueue.class.getName());
+		map.put("1.3.39", RingBuffer.class.getName());
 
 	}
 
