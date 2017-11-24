@@ -16,14 +16,14 @@ package com.kyson.chapter1.section3;
  */
 public class RingBuffer<Item> {
 
-	private Item[] a = null;
+	private Item[] a;
 
 	private int writePos = 0;
 	private int readPos = 0;
 	private boolean flipped = false; // the flip marker
 
 	public RingBuffer(int cap) {
-		this.a = (Item[]) new Object[cap];
+		a = (Item[]) new Object[cap];
 	}
 
 	public void reset() {
@@ -76,7 +76,7 @@ public class RingBuffer<Item> {
 		}
 	}
 
-	public Object take() {
+	public Item take() {
 		if (!flipped) {
 			if (readPos < writePos) {
 				return a[readPos++];
@@ -98,4 +98,39 @@ public class RingBuffer<Item> {
 			}
 		}
 	}
+	
+	
+	
+	public static void main(String[] args){
+		int capacity = 10;
+		RingBuffer<String> ringBuffer = new RingBuffer<String>(capacity);
+		
+		/*******************测试用例1*************************/
+		for (int i = 0; i < capacity; i++) {
+			String inputItem = i+"";
+			boolean putSuccess = ringBuffer.put(inputItem);
+			System.out.println(putSuccess ? "插入" + inputItem + "成功" : "插入" + inputItem + "失败" );
+		}
+		
+		/*******************测试用例2*************************/
+		for (int i = 0; i < capacity + 1; i++) {
+			
+			if (i == capacity - 1) {
+				String takeItem = ringBuffer.take();
+				System.out.println("取出" + takeItem + "成功");
+			}
+			
+			if (i == capacity) {
+				String takeItem = ringBuffer.take();
+				System.out.println("取出" + takeItem + "成功");
+			}
+			
+			String inputItem = i+"";
+			boolean putSuccess = ringBuffer.put(inputItem);
+			System.out.println(putSuccess ? "插入" + inputItem + "成功" : "插入" + inputItem + "失败" );
+		}
+		
+		
+	}
+	
 }
