@@ -68,6 +68,10 @@ public class Parentheses {
 				}
 			}
 		}
+		
+		if (!ops.isEmpty()) {
+			isPaired = false;
+		}
 		System.out.println(isPaired);
 		
 		
