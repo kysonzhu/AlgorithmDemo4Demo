@@ -39,7 +39,7 @@ import com.kyson.chapter1.section3.RingBuffer;
 import com.kyson.chapter1.section3.Stack;
 import com.kyson.chapter1.section3.Stack2;
 import com.kyson.chapter1.section3.Steque;
-import com.kyson.chapter1.section4.ThreeSum;
+import com.kyson.chapter1.section4.ThreeSum2;
 
 public class FileIndex {
 
@@ -106,7 +106,7 @@ public class FileIndex {
         /***
          * section 3
          */
-        map.put("1.4.2", ThreeSum.class.getName());
+        map.put("1.4.2", ThreeSum2.class.getName());
 
     }
 
