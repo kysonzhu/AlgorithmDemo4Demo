@@ -16,7 +16,7 @@ public class DoublingTest {
     }
 
     public static void main(String[] args) {  // Print table of running times.
-        for (int N = 250; true; N = 2 * N) {  // Print time for problem size N.
+        for (int N = 250; true; N += N) {  // Print time for problem size N.
             double time = timeTrial(N);
             StdOut.printf("%7d %5.1f\n", N, time);
         }
