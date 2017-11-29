@@ -5,6 +5,7 @@ import com.kyson.chapter1.section1.DumplicateElements;
 import com.kyson.chapter1.section1.EquivalentKey;
 import com.kyson.chapter1.section1.Histogram;
 import com.kyson.chapter1.section1.HistogramSample;
+import com.kyson.chapter1.section1.RandomConnectSample;
 import com.kyson.chapter1.section2.BinarySearchCounter;
 import com.kyson.chapter1.section2.CircularRotation;
 import com.kyson.chapter1.section2.Interval1D;
@@ -57,6 +58,7 @@ public class FileIndex {
         map.put("1.1.27", BinomialSample.class.getName());
         map.put("1.1.28", DumplicateElements.class.getName());
         map.put("1.1.29", EquivalentKey.class.getName());
+        map.put("1.1.31", RandomConnectSample.class.getName());
         map.put("1.1.32", Histogram.class.getName());
 
         /***
