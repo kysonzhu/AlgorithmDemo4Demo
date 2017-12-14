@@ -32,16 +32,9 @@ public class StaticSETofInts {
 		if (-1 == index) {
 			return 0;
 		}
-		// 先向左边查找，但要注意避免越界
-		while (a[index] == key) {
-			--index;
-			if (index < 0) {
-				break;
-			}
-		}
 		int cnt = 0;
 		// 再向右边查找，注意避免越界
-		while (a[++index] == key) {
+		while (a[index++] == key) {
 			cnt++;
 			if (index >= a.length - 1) {
 				break;
@@ -51,18 +44,23 @@ public class StaticSETofInts {
 		return cnt;
 	}
 
-	private int rank(int key) { // Binary search.
+	public int rank(int key) {
+		int hi = a.length;
 		int lo = 0;
-		int hi = a.length - 1;
-		while (lo <= hi) { // Key is in a[lo..hi] or not present.
-			int mid = lo + (hi - lo) / 2;
-			if (key < a[mid])
-				hi = mid - 1;
-			else if (key > a[mid])
-				lo = mid + 1;
-			else
+		int mid = 0;
+		while(lo < hi){
+			mid = (hi + lo) / 2;
+			if (a[mid] < key) {
+	            lo = mid + 1;
+			}else if (a[mid] > key) {
+	            hi = mid;
+			}else if (mid > 0 && a[mid-1] == key) {
+	            hi = mid;
+			}else {
 				return mid;
+			}
 		}
+		
 		return -1;
 	}
 
