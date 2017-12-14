@@ -2,7 +2,7 @@ package com.kyson.chapter1.section4;
 
 import java.util.Arrays;
 
-public class BinarySearch {
+public class BinarySearch_ON {
 
 	public int rank(int key, int[] a) { // 数组必须是有序的
 		int lo = 0;
@@ -34,7 +34,7 @@ public class BinarySearch {
 		int[] b = { 1, 2, 3, 5, 4, 5, 6, 77, 7, 8, 8, 9, 1, 11, 22, 234, 90 };
 //		int[] b = { 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1 };
 		Arrays.sort(b);
-		BinarySearch search = new BinarySearch();
+		BinarySearch_ON search = new BinarySearch_ON();
 		
 		int targetKey = 234;
 		int index = search.rank(targetKey,b);
