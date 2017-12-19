@@ -28,7 +28,6 @@ public class TwoSame {
 	}
 
 	public static void main(String[] args) {
-//		int[] a = {1,2,3,4,5,6,7,0,7,9};
 		String filePathString = System.getProperty("user.dir");
         String intFileString = filePathString
                 + "/src/com/kyson/chapter1/section4/" + "1kints.txt";
