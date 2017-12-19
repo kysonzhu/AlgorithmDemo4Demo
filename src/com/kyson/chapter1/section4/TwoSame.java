@@ -12,7 +12,6 @@ import edu.princeton.cs.algs4.In;
  *
  */
 public class TwoSame {
-	
 	public static int twoSame(long[] a){
 		int cnt = 0;
 		for (int i = 0; i < a.length; i++)
@@ -34,7 +33,6 @@ public class TwoSame {
 
         In in = new In(intFileString);
         long[] a = in.readAllLongs();
-		
 		System.out.println("相同的整数的数量为"+ twoSame(a));
 	}
 }
