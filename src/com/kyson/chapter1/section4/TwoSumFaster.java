@@ -68,7 +68,7 @@ public class TwoSumFaster {
 		long[] a = in.readAllLongs();
 		Arrays.sort(a);
 		TwoSumFaster sum = new TwoSumFaster();
-		StdOut.println(sum.twoSumFaster2(a) + "对");
+		StdOut.println(sum.twoSumFaster(a) + "对");
 
 	}
 
