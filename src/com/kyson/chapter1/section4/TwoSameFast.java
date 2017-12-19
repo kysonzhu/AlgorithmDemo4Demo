@@ -15,6 +15,18 @@ import edu.princeton.cs.algs4.In;
  */
 
 public class TwoSameFast {
+	
+	public static int twoSameFast(long[] a){
+		int cnt = 0;
+		for (int i = 0; i < a.length - 1; i++) 
+		{
+			if (a[i] == a[i+1]) {
+				cnt++;
+			}
+		}
+		return cnt;
+	}
+	
 
 	public static void main(String[] args) {
 		// int[] a = {1,2,3,4,5,6,7,0,7,9};
@@ -25,14 +37,7 @@ public class TwoSameFast {
 		In in = new In(intFileString);
 		long[] a = in.readAllLongs();
 		Arrays.sort(a);
-
-		int cnt = 0;
-		for (int i = 0; i < a.length - 1; i++) 
-		{
-			if (a[i] == a[i+1]) {
-				cnt++;
-			}
-		}
-		System.out.println("相同的整数的数量为" + cnt);
+		
+		System.out.println("相同的整数的数量为" + twoSameFast(a));
 	}
 }
