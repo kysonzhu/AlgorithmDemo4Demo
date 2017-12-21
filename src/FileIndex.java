@@ -46,6 +46,7 @@ import com.kyson.chapter1.section4.FourSum;
 import com.kyson.chapter1.section4.SameElement;
 import com.kyson.chapter1.section4.StaticSETofInts;
 import com.kyson.chapter1.section4.ThreeSum2;
+import com.kyson.chapter1.section4.ThreeSumFaster;
 import com.kyson.chapter1.section4.TwoSame;
 import com.kyson.chapter1.section4.TwoSameFast;
 import com.kyson.chapter1.section4.TwoSumFaster;
@@ -125,7 +126,7 @@ public class FileIndex {
 		map.put("1.4.12", SameElement.class.getName());
 		map.put("1.4.14", FourSum.class.getName());
 		map.put("1.4.15", TwoSumFaster.class.getName());
-
+		map.put("1.4.15", ThreeSumFaster.class.getName());
 	}
 
 }
