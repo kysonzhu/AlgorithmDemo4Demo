@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fc5531b-8077-4986-bec8-9fe94eff533f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/kyson/chapter1/section4/ThreeSumFaster.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/kyson/chapter1/section4/TwoSumFaster.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FileIndex.java" afterPath="$PROJECT_DIR$/src/FileIndex.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kyson/chapter1/section4/5ints.txt" afterPath="$PROJECT_DIR$/src/com/kyson/chapter1/section4/5ints.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kyson/chapter1/section4/FourSum.java" afterPath="$PROJECT_DIR$/src/com/kyson/chapter1/section4/FourSum.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kyson/chapter1/section4/SameElement.java" afterPath="$PROJECT_DIR$/src/com/kyson/chapter1/section4/SameElement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kyson/chapter1/section4/ThreeSum.java" afterPath="$PROJECT_DIR$/src/com/kyson/chapter1/section4/ThreeSum.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kyson/chapter1/section4/ThreeSum2.java" afterPath="$PROJECT_DIR$/src/com/kyson/chapter1/section4/ThreeSum2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kyson/chapter1/section4/TwoSame.java" afterPath="$PROJECT_DIR$/src/com/kyson/chapter1/section4/TwoSame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kyson/chapter1/section4/TwoSameFast.java" afterPath="$PROJECT_DIR$/src/com/kyson/chapter1/section4/TwoSameFast.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/kyson/chapter1/section4/TwoSum.java" afterPath="$PROJECT_DIR$/src/com/kyson/chapter1/section4/TwoSum.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,36 +44,10 @@
       <file leaf-file-name="FourSum.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section4/FourSum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="34" column="4" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+            <state relative-caret-position="190">
+              <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileIndex.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FileIndex.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="69" column="34" lean-forward="false" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1513956866278" expanded="true" signature="5535:5538" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BinarySearchRecursion.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section1/BinarySearchRecursion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="45" lean-forward="false" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
-              <folding>
-                <element signature="e#932#933#0" expanded="true" />
-                <element signature="e#977#978#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,7 +107,6 @@
         <option value="$PROJECT_DIR$/src/com/kyson/chapter1/section3/Stack.java" />
         <option value="$PROJECT_DIR$/lib/algs4.jar!/edu/princeton/cs/algs4/In.class" />
         <option value="$PROJECT_DIR$/src/com/kyson/chapter1/section4/5ints.txt" />
-        <option value="$PROJECT_DIR$/src/FileIndex.java" />
         <option value="$PROJECT_DIR$/src/com/kyson/chapter1/section1/RandomConnecSample.java" />
         <option value="$PROJECT_DIR$/src/com/kyson/chapter1/section4/ThreeSum2.java" />
         <option value="$PROJECT_DIR$/src/com/kyson/chapter1/section4/ThreeSum.java" />
@@ -156,6 +118,8 @@
         <option value="$PROJECT_DIR$/src/com/kyson/chapter1/section4/ThreeSumFast.java" />
         <option value="$PROJECT_DIR$/src/com/kyson/chapter1/section1/BinarySearchRecursion.java" />
         <option value="$PROJECT_DIR$/src/com/kyson/chapter1/section4/FourSum.java" />
+        <option value="$PROJECT_DIR$/src/com/kyson/chapter1/section1/HistogramSample.java" />
+        <option value="$PROJECT_DIR$/src/FileIndex.java" />
       </list>
     </option>
   </component>
@@ -517,7 +481,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section3/FixedCapacityStackOfStrings.java" />
     <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section3/FixedCapacityStack.java" />
     <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section3/Stack.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -831,17 +794,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FileIndex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="69" column="34" lean-forward="false" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1513956866278" expanded="true" signature="5535:5538" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section4/TwoSum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -852,10 +804,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section1/HistogramSample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-97">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileIndex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="61" column="23" lean-forward="false" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2440#2456#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section1/BinarySearchRecursion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="45" lean-forward="false" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+        <state relative-caret-position="209">
+          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
           <folding>
             <element signature="e#932#933#0" expanded="true" />
             <element signature="e#977#978#0" expanded="true" />
@@ -865,8 +836,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section4/FourSum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="34" column="4" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+        <state relative-caret-position="190">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
