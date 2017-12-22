@@ -20,7 +20,7 @@ public class SameElement {
 			}else if (x[i] > y[j]) {
 				j++;
 			}else {
-				System.out.println("x的第"+i+"个元素:"+x[i]);
+				System.out.println(""+ x[i]);
 				i++;
 				j++;
 			}

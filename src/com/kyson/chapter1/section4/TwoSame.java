@@ -12,16 +12,7 @@ import edu.princeton.cs.algs4.In;
  *
  */
 public class TwoSame {
-
-	public static void main(String[] args) {
-//		int[] a = {1,2,3,4,5,6,7,0,7,9};
-		String filePathString = System.getProperty("user.dir");
-        String intFileString = filePathString
-                + "/src/com/kyson/chapter1/section4/" + "1kints.txt";
-
-        In in = new In(intFileString);
-        long[] a = in.readAllLongs();
-
+	public static int twoSame(long[] a){
 		int cnt = 0;
 		for (int i = 0; i < a.length; i++)
 		{
@@ -32,6 +23,16 @@ public class TwoSame {
 				}
 			}
 		}
-		System.out.println("相同的整数的数量为"+ cnt);
+		return cnt;
+	}
+
+	public static void main(String[] args) {
+		String filePathString = System.getProperty("user.dir");
+        String intFileString = filePathString
+                + "/src/com/kyson/chapter1/section4/" + "1kints.txt";
+
+        In in = new In(intFileString);
+        long[] a = in.readAllLongs();
+		System.out.println("相同的整数的数量为"+ twoSame(a));
 	}
 }

@@ -42,11 +42,14 @@ import com.kyson.chapter1.section3.Stack2;
 import com.kyson.chapter1.section3.Steque;
 import com.kyson.chapter1.section4.BinarySearch_ON;
 import com.kyson.chapter1.section4.BinarySearch_OlogN;
+import com.kyson.chapter1.section4.FourSum;
 import com.kyson.chapter1.section4.SameElement;
 import com.kyson.chapter1.section4.StaticSETofInts;
 import com.kyson.chapter1.section4.ThreeSum2;
+import com.kyson.chapter1.section4.ThreeSumFaster;
 import com.kyson.chapter1.section4.TwoSame;
 import com.kyson.chapter1.section4.TwoSameFast;
+import com.kyson.chapter1.section4.TwoSumFaster;
 
 public class FileIndex {
 
@@ -121,7 +124,9 @@ public class FileIndex {
 		map.put("1.4.10", BinarySearch_OlogN.class.getName());
 		map.put("1.4.11", StaticSETofInts.class.getName());
 		map.put("1.4.12", SameElement.class.getName());
-
+		map.put("1.4.14", FourSum.class.getName());
+		map.put("1.4.15", TwoSumFaster.class.getName());
+		map.put("1.4.15", ThreeSumFaster.class.getName());
 	}
 
 }

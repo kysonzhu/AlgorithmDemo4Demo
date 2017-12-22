@@ -24,7 +24,7 @@ public class ThreeSum2 {
     public static void main(String[] args) {
         String filePathString = System.getProperty("user.dir");
         String intFileString = filePathString
-                + "/src/com/kyson/chapter1/section4/" + "5ints.txt";
+                + "/src/com/kyson/chapter1/section4/" + "1Kints.txt";
 
         In in = new In(intFileString);
         long[] a = in.readAllLongs();
