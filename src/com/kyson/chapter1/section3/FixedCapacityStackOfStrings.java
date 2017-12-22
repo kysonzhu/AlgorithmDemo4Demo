@@ -14,32 +14,31 @@ public class FixedCapacityStackOfStrings {
     private int N;
     private String[] a;
 
-    public FixedCapacityStackOfStrings(int cap){
+    public FixedCapacityStackOfStrings(int cap) {
         String[] temp = new String[cap];
         a = temp;
     }
 
 
-    public void push(String item){
+    public void push(String item) {
         a[N++] = item;
     }
 
-    public int size(){
+    public int size() {
         return N;
     }
 
-    public String pop(){
+    public String pop() {
         return a[--N];
     }
 
-    public boolean isEmpty(){
-        return N ==0;
+    public boolean isEmpty() {
+        return N == 0;
     }
 
-    public boolean isFull(){
+    public boolean isFull() {
         return N == a.length;
     }
-
 
 
 //    public static void main(String[] argv){
@@ -51,19 +50,19 @@ public class FixedCapacityStackOfStrings {
 //        strs.push("顶级程序员不穿女装");
 //
 //    }
-    
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
 //      String testString = "it was - the best - of times - - - it was - the - -";
-    FixedCapacityStackOfStrings s = new FixedCapacityStackOfStrings(100);
-      while (!StdIn.isEmpty()){
-          String item = StdIn.readString();
-          if (!item.equals("-")){
-              s.push(item);
-          }else if(!s.isEmpty()){
-              StdOut.print(s.pop() + "");
-          }
-      }
-  }
+        FixedCapacityStackOfStrings s = new FixedCapacityStackOfStrings(100);
+        while (!StdIn.isEmpty()) {
+            String item = StdIn.readString();
+            if (!item.equals("-")) {
+                s.push(item);
+            } else if (!s.isEmpty()) {
+                StdOut.print(s.pop() + "");
+            }
+        }
+    }
 
 
 }
