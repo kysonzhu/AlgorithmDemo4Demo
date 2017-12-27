@@ -60,7 +60,7 @@ public class FileIndex {
 
 		map.put("1.1.15", HistogramSample.class.getName());
 		map.put("1.1.22", BinarySearchRecursion.class.getName());
-
+		map.put("1.1.23", BinarySearchWithParams.class.getName());
 		map.put("1.1.27", BinomialSample.class.getName());
 		map.put("1.1.28", DumplicateElements.class.getName());
 		map.put("1.1.29", EquivalentKey.class.getName());
