@@ -1,6 +1,13 @@
 import java.util.HashMap;
 
-import com.kyson.chapter1.section1.*;
+import com.kyson.chapter1.section1.BinarySearchRecursion;
+import com.kyson.chapter1.section1.BinarySearchWithParams;
+import com.kyson.chapter1.section1.BinomialSample;
+import com.kyson.chapter1.section1.DumplicateElements;
+import com.kyson.chapter1.section1.EquivalentKey;
+import com.kyson.chapter1.section1.Histogram;
+import com.kyson.chapter1.section1.HistogramSample;
+import com.kyson.chapter1.section1.RandomConnectSample;
 import com.kyson.chapter1.section2.BinarySearchCounter;
 import com.kyson.chapter1.section2.CircularRotation;
 import com.kyson.chapter1.section2.Interval1D;
@@ -37,6 +44,8 @@ import com.kyson.chapter1.section3.Stack2;
 import com.kyson.chapter1.section3.Steque;
 import com.kyson.chapter1.section4.BinarySearch_ON;
 import com.kyson.chapter1.section4.BinarySearch_OlogN;
+import com.kyson.chapter1.section4.ClosestPairFaster;
+import com.kyson.chapter1.section4.FastestPairLinear;
 import com.kyson.chapter1.section4.FourSum;
 import com.kyson.chapter1.section4.SameElement;
 import com.kyson.chapter1.section4.StaticSETofInts;
@@ -124,6 +133,9 @@ public class FileIndex {
 		map.put("1.4.14", FourSum.class.getName());
 		map.put("1.4.15", TwoSumFaster.class.getName());
 		map.put("1.4.15", ThreeSumFaster.class.getName());
+		map.put("1.4.16", ClosestPairFaster.class.getName());
+		map.put("1.4.17", FastestPairLinear.class.getName());
+
 	}
 
 }
