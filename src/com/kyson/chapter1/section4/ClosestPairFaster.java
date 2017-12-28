@@ -12,32 +12,26 @@ import java.util.Arrays;
  * running time of your program should be linearithmic in the worst case.
  *
  */
-public class Closestpair {
-
-	public static void closestPair(double[] a){
-		double smallestValues = Double.MAX_VALUE;
-		int smallestIndexI = 0;
-		int smallestIndexj = 0;
-		for (int i = 0; i < a.length; i++) 
+public class ClosestPairFaster {
+	public static void closestPairFaster(double[] x)
+	{
+		double minNum = Double.MAX_VALUE;
+		int minI = 0;
+		for(int i = 0;i < x.length - 1;++i)
 		{
-			for (int j = i+ 1; j < a.length; j++) 
+			if (x[i+1]- x[i] < minNum) 
 			{
-				double value = Math.abs(a[i]- a[j]);
-				if (value < smallestValues) 
-				{
-					smallestValues = value;
-					smallestIndexI = i;
-					smallestIndexj = j;
-				}
+				minI = i;
+				minNum = x[i+1]- x[i] ;
 			}
 		}
-		System.out.println("最接近的两个数为:"+a[smallestIndexI]);
-		System.out.println("和:"+a[smallestIndexj]);
+		System.out.println("最接近的两个数为:"+x[minI]);
+		System.out.println("和:"+x[minI+ 1]);
 	}
 	
-	public static void main(String[] args) {
-		double[] b = {1.0,26,36,74,599,60,7,8};
-		Arrays.sort(b);
-		closestPair(b);
+	public static void main(String[] args){
+		double[] a = {1,2,3,4,5,888,76,45};
+		Arrays.sort(a);
+		closestPairFaster(a);
 	}
 }
