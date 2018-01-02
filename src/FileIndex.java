@@ -42,18 +42,7 @@ import com.kyson.chapter1.section3.RingBuffer;
 import com.kyson.chapter1.section3.Stack;
 import com.kyson.chapter1.section3.Stack2;
 import com.kyson.chapter1.section3.Steque;
-import com.kyson.chapter1.section4.BinarySearch_ON;
-import com.kyson.chapter1.section4.BinarySearch_OlogN;
-import com.kyson.chapter1.section4.ClosestPairFaster;
-import com.kyson.chapter1.section4.FastestPairLinear;
-import com.kyson.chapter1.section4.FourSum;
-import com.kyson.chapter1.section4.SameElement;
-import com.kyson.chapter1.section4.StaticSETofInts;
-import com.kyson.chapter1.section4.ThreeSum2;
-import com.kyson.chapter1.section4.ThreeSumFaster;
-import com.kyson.chapter1.section4.TwoSame;
-import com.kyson.chapter1.section4.TwoSameFast;
-import com.kyson.chapter1.section4.TwoSumFaster;
+import com.kyson.chapter1.section4.*;
 
 public class FileIndex {
 
@@ -135,6 +124,7 @@ public class FileIndex {
 		map.put("1.4.15", ThreeSumFaster.class.getName());
 		map.put("1.4.16", ClosestPairFaster.class.getName());
 		map.put("1.4.17", FastestPairLinear.class.getName());
+		map.put("1.4.18", LocalMinimum.class.getName());
 
 	}
 
