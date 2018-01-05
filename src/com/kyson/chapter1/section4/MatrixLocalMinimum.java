@@ -1,5 +1,7 @@
 package com.kyson.chapter1.section4;
 
+import java.util.Arrays;
+
 /**
  * 
  * 1.4.19 矩阵的局部最小元素。给定一个含有 N^2 个不同整数的 N×N 数组 a[]。设计一个运送时间和 N
@@ -14,18 +16,42 @@ package com.kyson.chapter1.section4;
  */
 public class MatrixLocalMinimum {
 
-	private class IndexPath {
+	private static class IndexPath {
 		int row;
 		int column;
 	}
 	
 	private IndexPath miniMumIndexPathOfItem(int[][] matrix,IndexPath indexPath){
-		IndexPath resultItem = indexPath;
-		
-		int left = matrix[indexPath.row][(indexPath.column - 1) >= 0 ? (indexPath.column - 1) : 0  ];
-		int right = matrix[indexPath.row][(indexPath.column + 1) <= matrix.length ? (indexPath.column - 1) : 0  ];
-		
-		
+		IndexPath resultItem = new IndexPath();
+		resultItem.column = indexPath.column;
+		resultItem.row = indexPath.row;
+
+		int currentItem = matrix[indexPath.row][indexPath.column];
+		int left  = matrix[indexPath.row][(indexPath.column - 1) >= 0 ? (indexPath.column - 1) : indexPath.column  ];
+		int right = matrix[indexPath.row][(indexPath.column + 1) <= matrix.length ? (indexPath.column + 1) : indexPath.column  ];
+		int top    = matrix[(indexPath.row - 1 ) >= 0 ? (indexPath.row - 1 ) : indexPath.row][indexPath.column];
+		int bottom = matrix[(indexPath.row + 1 ) <= matrix.length ? (indexPath.row + 1 ) : indexPath.row][indexPath.column];
+
+		int[] rounder = {left,right,top,bottom,currentItem};
+		Arrays.sort(rounder);
+		if (rounder[0] == currentItem){
+			System.out.print("row:"+resultItem.row + "column:" + resultItem.column);
+			return resultItem;
+		}else if (rounder[0] == left){
+			resultItem.column = (indexPath.column - 1);
+			miniMumIndexPathOfItem(matrix,resultItem);
+		}else if (rounder[0] == right){
+			resultItem.column = (indexPath.column + 1);
+			miniMumIndexPathOfItem(matrix,resultItem);
+		}else if (rounder[0] == top) {
+			resultItem.row = (indexPath.row - 1);
+			miniMumIndexPathOfItem(matrix,resultItem);
+		}else if (rounder[0] == bottom) {
+			resultItem.row = (indexPath.row + 1);
+			miniMumIndexPathOfItem(matrix,resultItem);
+		}else{
+
+		}
 		return resultItem;
 	}
 
@@ -58,7 +84,10 @@ public class MatrixLocalMinimum {
 		int[] row = matrix[middleRow];
 		int index = miniumOfArray(row);
 		MatrixLocalMinimum localMinimum = new MatrixLocalMinimum();
-		
+		IndexPath indexPath = new IndexPath();
+		indexPath.row = middleRow;
+		indexPath.column = index;
+		IndexPath resultIndexPath = localMinimum.miniMumIndexPathOfItem(matrix,indexPath);
 	}
 
 }
