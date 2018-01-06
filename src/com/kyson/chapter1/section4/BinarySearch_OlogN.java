@@ -2,6 +2,14 @@ package com.kyson.chapter1.section4;
 
 import java.util.Arrays;
 
+/**
+ * 1.4.10 修改二分查找算法，使之总是返回和被查找的键匹配的索引最小的元素。（且仍能够保证对数级别的运行时间）
+ *
+ * 1.4.10 Modify binary search so that it always returns the element with the
+ * smallest index that matches the search element (and still guarantees
+ * logarithmic running time).
+ *
+ */
 public class BinarySearch_OlogN {
 
 	public int rank(int[] a, int key) {

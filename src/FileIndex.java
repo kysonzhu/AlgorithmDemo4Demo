@@ -125,6 +125,9 @@ public class FileIndex {
 		map.put("1.4.16", ClosestPairFaster.class.getName());
 		map.put("1.4.17", FastestPairLinear.class.getName());
 		map.put("1.4.18", LocalMinimum.class.getName());
+		map.put("1.4.19", MatrixLocalMinimum.class.getName());
+		map.put("1.4.20", BitonicSearch.class.getName());
+
 
 	}
 
