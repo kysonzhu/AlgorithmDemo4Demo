@@ -127,6 +127,7 @@ public class FileIndex {
 		map.put("1.4.18", LocalMinimum.class.getName());
 		map.put("1.4.19", MatrixLocalMinimum.class.getName());
 		map.put("1.4.20", BitonicSearch.class.getName());
+		map.put("1.4.22", FibonacciSearch.class.getName());
 
 
 	}
