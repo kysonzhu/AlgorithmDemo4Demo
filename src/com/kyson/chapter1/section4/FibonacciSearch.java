@@ -23,7 +23,7 @@ import java.util.Arrays;
  * i+Fk–2 +Fk–1].
  */
 public class FibonacciSearch {
-    
+
     private final int FI_SIZE = 20;
 
     public int fbSearch(int[] array, int target) {
