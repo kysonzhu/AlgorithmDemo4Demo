@@ -12,10 +12,15 @@ package com.kyson.chapter1.section5;
 
 
 public class QuickFind {
-
     private int[] id;     // access to component id (site indexed)
-
     private int count;    // number of components
+
+    public QuickFind(int N){
+        id = new int[N];
+        for (int i = 0; i < N; i++) {
+            id[i] = i;
+        }
+    }
 
     public int find(int p) {
         return id[p];
@@ -30,6 +35,19 @@ public class QuickFind {
         for (int i = 0; i < id.length; i++)
             if (id[i] == pID) id[i] = qID;
         count--;
+    }
+
+    public static void main(String[] args){
+        QuickFind find = new QuickFind(10);
+        find.union(9,0);
+        find.union(3,4);
+        find.union(5,8);
+        find.union(7,2);
+        find.union(2,1);
+        find.union(5,7);
+        find.union(0,3);
+        find.union(4,2);
+
     }
 
 }
