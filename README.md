@@ -25,3 +25,7 @@ __另外，本人的个人博客 http://www.kyson.cn 也在不停的更新中，
 		map.put("1.1.29", EquivalentKey.class.getName());
 ```
 的意思就是，EquivalentKey 对应的是1.1.29 的习题
+
+##目录：
+[算法练习(1):Java基本语法(1.1.1-1.1.7)](https://www.jianshu.com/p/14dcd76cc1ff)
+[算法练习(2):二维数组(1.1.8-1.1.13)](https://www.jianshu.com/p/5a1bf284986f)
