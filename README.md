@@ -26,7 +26,10 @@ __另外，本人的个人博客 http://www.kyson.cn 也在不停的更新中，
 ```
 的意思就是，EquivalentKey 对应的是1.1.29 的习题
 
-### 目录：
+# 目录：
+ ## 第一章
+ 
+ ### 第一节
  - [算法练习(1):Java基本语法(1.1.1-1.1.7)](https://www.jianshu.com/p/14dcd76cc1ff)
  - [算法练习(2):二维数组(1.1.8-1.1.13)](https://www.jianshu.com/p/5a1bf284986f)
  - [算法练习(3) :递归(1.1.15-1.1.21)](https://www.jianshu.com/p/fedc9188b3a0)
@@ -42,6 +45,9 @@ __另外，本人的个人博客 http://www.kyson.cn 也在不停的更新中，
  - [算法练习(13):随机连接(1.1.31)](https://www.jianshu.com/p/551687a757d8)
  - [算法练习(14):直方图(1.1.32)](https://www.jianshu.com/p/313696c9684f)
  - [算法练习(15):矩阵库(1.1.33)](https://www.jianshu.com/p/43886fa56813)
+
+
+  ### 第二节
  - [算法练习(16):计算两点间距离(1.2.1)](https://www.jianshu.com/p/59da913cf40a)
  - [算法练习(17):相交的间隔对(1.2.2)](https://www.jianshu.com/p/f40b00c7a347)
  - [算法练习(18):长方形的一个实现(1.2.3)](https://www.jianshu.com/p/3d335cf2a020)
@@ -52,6 +58,8 @@ __另外，本人的个人博客 http://www.kyson.cn 也在不停的更新中，
  - [算法练习(23):计数器设计，画点(1.2.10)](https://www.jianshu.com/p/893bf3f494f6)
  - [算法练习(24):日期类设计(1.2.11-1.2.12)](https://www.jianshu.com/p/a6836c80e7b9)
  - [算法练习(25):Transaction类设计(1.2.13-1.2.14)](https://www.jianshu.com/p/8bc14a392079)
+
+### 第三节
  - [算法练习(26):Stack概念(1.3.1-1.3.2)](https://www.jianshu.com/p/ea512b9dcf0e)
  - [算法练习(27):Stack运用之解释器(1.3.3-1.3.4)](https://www.jianshu.com/p/4cb2e4a81f2b)
  - [算法练习(28):Stack运用之进制转换(1.3.5)](https://www.jianshu.com/p/583292501a9e)
