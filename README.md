@@ -30,3 +30,4 @@ __另外，本人的个人博客 http://www.kyson.cn 也在不停的更新中，
  - [算法练习(1):Java基本语法(1.1.1-1.1.7)](https://www.jianshu.com/p/14dcd76cc1ff)
  - [算法练习(2):二维数组(1.1.8-1.1.13)](https://www.jianshu.com/p/5a1bf284986f)
  - [算法练习(3) :递归(1.1.15-1.1.21)](https://www.jianshu.com/p/fedc9188b3a0)
+ - [算法练习(4):二分法查找(1.1.22-1.1.25)](https://www.jianshu.com/p/061b1d5613ee)
