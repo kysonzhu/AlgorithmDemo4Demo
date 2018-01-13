@@ -48,6 +48,8 @@ public class QuickFind {
         find.union(0,3);
         find.union(4,2);
 
+
+
     }
 
 }
