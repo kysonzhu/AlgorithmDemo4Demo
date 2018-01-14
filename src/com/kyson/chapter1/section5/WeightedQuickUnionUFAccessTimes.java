@@ -29,7 +29,7 @@ public class WeightedQuickUnionUFAccessTimes {
     private int find(int p) {  // Follow links to find a root.
         while (p != id[p]) {
             p = id[p];
-            eachDoUnionArrayAccessTimes++;
+            eachDoUnionArrayAccessTimes += 2;
         }
         eachDoUnionArrayAccessTimes++;
         return p;
