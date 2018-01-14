@@ -60,98 +60,104 @@ import com.kyson.chapter1.section4.TwoSame;
 import com.kyson.chapter1.section4.TwoSameFast;
 import com.kyson.chapter1.section4.TwoSumFaster;
 import com.kyson.chapter1.section5.QuickFind;
+import com.kyson.chapter1.section5.QuickUnion;
+import com.kyson.chapter1.section5.WeightedQuickUnionUF;
 
 public class FileIndex {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
 
-		HashMap<String, String> map = new HashMap<String, String>();
+        HashMap<String, String> map = new HashMap<String, String>();
 
-		/****
-		 * section 1
-		 */
-		// 找到重复元素
+        /****
+         * section 1
+         */
+        // 找到重复元素
 
-		map.put("1.1.15", HistogramSample.class.getName());
-		map.put("1.1.22", BinarySearchRecursion.class.getName());
-		map.put("1.1.23", BinarySearchWithParams.class.getName());
-		map.put("1.1.27", BinomialSample.class.getName());
-		map.put("1.1.28", DumplicateElements.class.getName());
-		map.put("1.1.29", EquivalentKey.class.getName());
-		map.put("1.1.31", RandomConnectSample.class.getName());
-		map.put("1.1.32", Histogram.class.getName());
+        map.put("1.1.15", HistogramSample.class.getName());
+        map.put("1.1.22", BinarySearchRecursion.class.getName());
+        map.put("1.1.23", BinarySearchWithParams.class.getName());
+        map.put("1.1.27", BinomialSample.class.getName());
+        map.put("1.1.28", DumplicateElements.class.getName());
+        map.put("1.1.29", EquivalentKey.class.getName());
+        map.put("1.1.31", RandomConnectSample.class.getName());
+        map.put("1.1.32", Histogram.class.getName());
 
-		/***
-		 * section 2
-		 */
-		map.put("1.2.1", Point2D.class.getName());
-		map.put("1.2.2", Interval1D.class.getName());
-		map.put("1.2.3", Interval2D.class.getName());
-		map.put("1.2.6", CircularRotation.class.getName());
-		map.put("1.2.9", BinarySearchCounter.class.getName());
-		map.put("1.2.10", VisualCounter.class.getName());
-		map.put("1.2.11", SmartDate1.class.getName());
-		map.put("1.2.12", SmartDate2.class.getName());
-		map.put("1.2.13", Transaction.class.getName());
-		map.put("1.2.14", Transaction.class.getName());
+        /***
+         * section 2
+         */
+        map.put("1.2.1", Point2D.class.getName());
+        map.put("1.2.2", Interval1D.class.getName());
+        map.put("1.2.3", Interval2D.class.getName());
+        map.put("1.2.6", CircularRotation.class.getName());
+        map.put("1.2.9", BinarySearchCounter.class.getName());
+        map.put("1.2.10", VisualCounter.class.getName());
+        map.put("1.2.11", SmartDate1.class.getName());
+        map.put("1.2.12", SmartDate2.class.getName());
+        map.put("1.2.13", Transaction.class.getName());
+        map.put("1.2.14", Transaction.class.getName());
 
-		/***
-		 * section 3
-		 */
-		map.put("1.3.1", FixedCapacityStackOfStrings.class.getName());
-		map.put("1.3.2", Stack.class.getName());
-		map.put("1.3.4", Parentheses.class.getName());
-		map.put("1.3.8", DoublingStackOfStrings.class.getName());
-		map.put("1.3.10", InfixToPostfix.class.getName());
-		map.put("1.3.11", EvaluatePostfix.class.getName());
-		map.put("1.3.12", Stack2.class.getName());
-		map.put("1.3.14", ResizingArrayQueueOfStrings.class.getName());
-		map.put("1.3.15", QueueExecise1.class.getName());
-		map.put("1.3.16", Date1.class.getName());
-		map.put("1.3.19", LinkedListExecise1.class.getName());
-		map.put("1.3.20", LinkedListExecise2.class.getName());
-		map.put("1.3.21", LinkedListExecise3.class.getName());
-		map.put("1.3.24", LinkedListExecise4.class.getName());
-		map.put("1.3.25", LinkedListExecise5.class.getName());
-		map.put("1.3.26", LinkedListExecise6.class.getName());
-		map.put("1.3.27", LinkedListExecise7.class.getName());
-		map.put("1.3.29", CircularLinkedListQueue.class.getName());
-		map.put("1.3.30", LinkedListExecise8.class.getName());
+        /***
+         * section 3
+         */
+        map.put("1.3.1", FixedCapacityStackOfStrings.class.getName());
+        map.put("1.3.2", Stack.class.getName());
+        map.put("1.3.4", Parentheses.class.getName());
+        map.put("1.3.8", DoublingStackOfStrings.class.getName());
+        map.put("1.3.10", InfixToPostfix.class.getName());
+        map.put("1.3.11", EvaluatePostfix.class.getName());
+        map.put("1.3.12", Stack2.class.getName());
+        map.put("1.3.14", ResizingArrayQueueOfStrings.class.getName());
+        map.put("1.3.15", QueueExecise1.class.getName());
+        map.put("1.3.16", Date1.class.getName());
+        map.put("1.3.19", LinkedListExecise1.class.getName());
+        map.put("1.3.20", LinkedListExecise2.class.getName());
+        map.put("1.3.21", LinkedListExecise3.class.getName());
+        map.put("1.3.24", LinkedListExecise4.class.getName());
+        map.put("1.3.25", LinkedListExecise5.class.getName());
+        map.put("1.3.26", LinkedListExecise6.class.getName());
+        map.put("1.3.27", LinkedListExecise7.class.getName());
+        map.put("1.3.29", CircularLinkedListQueue.class.getName());
+        map.put("1.3.30", LinkedListExecise8.class.getName());
 
-		map.put("1.3.32", Steque.class.getName());
-		map.put("1.3.34", RandomBag.class.getName());
-		map.put("1.3.35", RandomQueue.class.getName());
-		map.put("1.3.37", Josephus.class.getName());
-		map.put("1.3.38", GeneralizedQueue.class.getName());
-		map.put("1.3.39", RingBuffer.class.getName());
+        map.put("1.3.32", Steque.class.getName());
+        map.put("1.3.34", RandomBag.class.getName());
+        map.put("1.3.35", RandomQueue.class.getName());
+        map.put("1.3.37", Josephus.class.getName());
+        map.put("1.3.38", GeneralizedQueue.class.getName());
+        map.put("1.3.39", RingBuffer.class.getName());
 
-		/***
-		 * section 3
-		 */
-		map.put("1.4.2", ThreeSum2.class.getName());
-		map.put("1.4.8", TwoSame.class.getName());
-		map.put("1.4.8", TwoSameFast.class.getName());
-		map.put("1.4.10", BinarySearch_ON.class.getName());
-		map.put("1.4.10", BinarySearch_OlogN.class.getName());
-		map.put("1.4.11", StaticSETofInts.class.getName());
-		map.put("1.4.12", SameElement.class.getName());
-		map.put("1.4.14", FourSum.class.getName());
-		map.put("1.4.15", TwoSumFaster.class.getName());
-		map.put("1.4.15", ThreeSumFaster.class.getName());
-		map.put("1.4.16", ClosestPairFaster.class.getName());
-		map.put("1.4.17", FastestPairLinear.class.getName());
-		map.put("1.4.18", LocalMinimum.class.getName());
-		map.put("1.4.19", MatrixLocalMinimum.class.getName());
-		map.put("1.4.20", BitonicSearch.class.getName());
-		map.put("1.4.22", FibonacciSearch.class.getName());
-		map.put("1.4.23", FractionBinarySearch.class.getName());
+        /***
+         * section 4
+         */
+        map.put("1.4.2", ThreeSum2.class.getName());
+        map.put("1.4.8", TwoSame.class.getName());
+        map.put("1.4.8", TwoSameFast.class.getName());
+        map.put("1.4.10", BinarySearch_ON.class.getName());
+        map.put("1.4.10", BinarySearch_OlogN.class.getName());
+        map.put("1.4.11", StaticSETofInts.class.getName());
+        map.put("1.4.12", SameElement.class.getName());
+        map.put("1.4.14", FourSum.class.getName());
+        map.put("1.4.15", TwoSumFaster.class.getName());
+        map.put("1.4.15", ThreeSumFaster.class.getName());
+        map.put("1.4.16", ClosestPairFaster.class.getName());
+        map.put("1.4.17", FastestPairLinear.class.getName());
+        map.put("1.4.18", LocalMinimum.class.getName());
+        map.put("1.4.19", MatrixLocalMinimum.class.getName());
+        map.put("1.4.20", BitonicSearch.class.getName());
+        map.put("1.4.22", FibonacciSearch.class.getName());
+        map.put("1.4.23", FractionBinarySearch.class.getName());
 
-		/***
-		 * section 3
-		 */
-		map.put("1.5.1", QuickFind.class.getName());
+        /***
+         * section 5
+         */
+        map.put("1.5.1", QuickFind.class.getName());
+        map.put("1.5.2", QuickUnion.class.getName());
+        map.put("1.5.3", WeightedQuickUnionUF.class.getName());
 
-	}
+    }
+
+
 
 }
