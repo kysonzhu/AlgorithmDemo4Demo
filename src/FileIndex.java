@@ -42,23 +42,7 @@ import com.kyson.chapter1.section3.RingBuffer;
 import com.kyson.chapter1.section3.Stack;
 import com.kyson.chapter1.section3.Stack2;
 import com.kyson.chapter1.section3.Steque;
-import com.kyson.chapter1.section4.BinarySearch_ON;
-import com.kyson.chapter1.section4.BinarySearch_OlogN;
-import com.kyson.chapter1.section4.BitonicSearch;
-import com.kyson.chapter1.section4.ClosestPairFaster;
-import com.kyson.chapter1.section4.FastestPairLinear;
-import com.kyson.chapter1.section4.FibonacciSearch;
-import com.kyson.chapter1.section4.FourSum;
-import com.kyson.chapter1.section4.FractionBinarySearch;
-import com.kyson.chapter1.section4.LocalMinimum;
-import com.kyson.chapter1.section4.MatrixLocalMinimum;
-import com.kyson.chapter1.section4.SameElement;
-import com.kyson.chapter1.section4.StaticSETofInts;
-import com.kyson.chapter1.section4.ThreeSum2;
-import com.kyson.chapter1.section4.ThreeSumFaster;
-import com.kyson.chapter1.section4.TwoSame;
-import com.kyson.chapter1.section4.TwoSameFast;
-import com.kyson.chapter1.section4.TwoSumFaster;
+import com.kyson.chapter1.section4.*;
 import com.kyson.chapter1.section5.QuickFind;
 import com.kyson.chapter1.section5.QuickUnion;
 import com.kyson.chapter1.section5.WeightedQuickUnionUF;
@@ -148,6 +132,7 @@ public class FileIndex {
         map.put("1.4.20", BitonicSearch.class.getName());
         map.put("1.4.22", FibonacciSearch.class.getName());
         map.put("1.4.23", FractionBinarySearch.class.getName());
+        map.put("1.4.27", QueueWithTowStacks.class.getName());
 
         /***
          * section 5
