@@ -133,6 +133,8 @@ public class FileIndex {
         map.put("1.4.22", FibonacciSearch.class.getName());
         map.put("1.4.23", FractionBinarySearch.class.getName());
         map.put("1.4.27", QueueWithTowStacks.class.getName());
+        map.put("1.4.27", QueueWithTwoStacksFaster.class.getName());
+
 
         /***
          * section 5
