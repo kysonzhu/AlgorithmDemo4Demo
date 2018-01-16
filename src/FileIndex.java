@@ -46,6 +46,7 @@ import com.kyson.chapter1.section4.*;
 import com.kyson.chapter1.section5.QuickFind;
 import com.kyson.chapter1.section5.QuickUnion;
 import com.kyson.chapter1.section5.WeightedQuickUnionUF;
+import com.kyson.chapter1.section5.WeightedQuickUnionUFSample;
 
 public class FileIndex {
 
@@ -142,6 +143,7 @@ public class FileIndex {
         map.put("1.5.1", QuickFind.class.getName());
         map.put("1.5.2", QuickUnion.class.getName());
         map.put("1.5.3", WeightedQuickUnionUF.class.getName());
+        map.put("1.5.4", WeightedQuickUnionUFSample.class.getName());
 
     }
 
