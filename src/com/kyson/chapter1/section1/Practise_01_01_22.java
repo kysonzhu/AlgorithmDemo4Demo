@@ -37,4 +37,5 @@ public class Practise_01_01_22 {
         rank(10,array);
     }
 
+
 }
