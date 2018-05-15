@@ -14,6 +14,10 @@ of the depth.
 * */
 public class Practise_01_01_22 {
 
+    public static int rank (int key,int[] a) {
+        return rank(key,a,0,16,1);
+    }
+
     public static int rank (int key,int[] a,int lo,int hi,int deep) {
         if (hi < lo) return -1;
         int mid = lo + (hi - lo) / 2;
@@ -28,9 +32,9 @@ public class Practise_01_01_22 {
             return mid;
     }
 
-    public static void main(String args[]){
-        int a[] = {1,2,3,4,6,7,8,9,11,15};
-        int result = rank(15,a,0,9,0);
+    public static void main(String[] args) {
+        int[] array = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16};
+        rank(10,array);
     }
 
 }
