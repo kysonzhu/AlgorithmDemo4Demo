@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fc5531b-8077-4986-bec8-9fe94eff533f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_22.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_28.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kyson/chapter1/section5/UFWithPathCompression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kyson/chapter1/section5/UFWithPathCompression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kyson/chapter1/section1/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kyson/chapter1/section1/BinarySearch.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,89 +25,60 @@
       <file leaf-file-name="QuickUnion.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section5/QuickUnion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
-              <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
+            <state relative-caret-position="393">
+              <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WeightedQuickUnionUF.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section5/WeightedQuickUnionUF.java">
+      <file leaf-file-name="DumplicateElements.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section1/DumplicateElements.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
-              <caret line="48" column="16" selection-start-line="48" selection-end-line="49" />
+            <state relative-caret-position="532">
+              <caret line="28" column="40" lean-forward="true" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UFWithPathCompression.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section5/UFWithPathCompression.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1083">
-              <caret line="59" selection-start-line="59" selection-end-line="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Selection.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter2/section1/Selection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Queue.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section3/Queue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Practise_01_01_03.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Practise_01_01_03.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_03.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+            <state relative-caret-position="57">
+              <caret line="3" column="30" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Integer.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/lang/Integer.java">
+      <file leaf-file-name="Practise_01_01_28.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_28.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="714" column="58" selection-start-line="714" selection-start-column="58" selection-end-line="714" selection-end-column="58" />
+            <state relative-caret-position="95">
+              <caret line="5" column="32" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+              <folding>
+                <element signature="e#139#140#0" expanded="true" />
+                <element signature="e#163#164#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuickUnionTimes.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section5/QuickUnionTimes.java">
+      <file leaf-file-name="BinarySearch.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section1/BinarySearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="634">
+              <caret line="64" column="9" lean-forward="true" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WeightedQuickUnionUFAccessTimes.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section5/WeightedQuickUnionUFAccessTimes.java">
+      <file leaf-file-name="Practise_01_01_22.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_22.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Comparable.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/lang/Comparable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1368">
-              <caret line="95" column="17" selection-start-line="95" selection-start-column="17" selection-end-line="95" selection-end-column="17" />
+            <state relative-caret-position="27">
+              <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -177,6 +149,10 @@
         <option value="$PROJECT_DIR$/src/com/kyson/chapter2/section1/Selection.java" />
         <option value="$PROJECT_DIR$/src/com/kyson/chapter1/section5/UFWithPathCompression.java" />
         <option value="$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_03.java" />
+        <option value="$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_28.java" />
+        <option value="$PROJECT_DIR$/src/com/kyson/chapter1/section1/BinarySearch.java" />
+        <option value="$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_20.java" />
+        <option value="$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_22.java" />
       </list>
     </option>
   </component>
@@ -276,12 +252,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -295,17 +271,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Unnamed">
+  <component name="RunManager" selected="Application.Practise_01_01_22">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
-    <configuration name="QueueWithTwoStacksFaster" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kyson.chapter1.section4.QueueWithTwoStacksFaster" />
+    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kyson.chapter1.section1.BinarySearch" />
+      <module name="AlgorithmDemo" />
+      <option name="PROGRAM_PARAMETERS" value="a.txt" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kyson.chapter1.section1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Practise_01_01_22" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kyson.chapter1.section1.Practise_01_01_22" />
       <module name="AlgorithmDemo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kyson.chapter1.section4.*" />
+          <option name="PATTERN" value="com.kyson.chapter1.section1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -336,17 +324,6 @@
       <option name="MAIN_CLASS_NAME" value="com.kyson.chapter1.section1.Practise_01_01_03" />
       <module name="AlgorithmDemo" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="WeightedQuickUnionUFAccessTimes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kyson.chapter1.section5.WeightedQuickUnionUFAccessTimes" />
-      <module name="AlgorithmDemo" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.kyson.chapter1.section5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
     </configuration>
     <configuration name="WeightedQuickUnionUFSample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.kyson.chapter1.section5.WeightedQuickUnionUFSample" />
@@ -402,19 +379,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Unnamed" />
-      <item itemvalue="Application.WeightedQuickUnionUFAccessTimes" />
-      <item itemvalue="Application.QueueWithTwoStacksFaster" />
       <item itemvalue="Application.WeightedQuickUnionUFSample" />
       <item itemvalue="Application.Selection" />
       <item itemvalue="Application.UFWithPathCompression" />
+      <item itemvalue="Application.BinarySearch" />
+      <item itemvalue="Application.Practise_01_01_22" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Practise_01_01_22" />
+        <item itemvalue="Application.BinarySearch" />
         <item itemvalue="Application.UFWithPathCompression" />
         <item itemvalue="Application.Selection" />
         <item itemvalue="Application.WeightedQuickUnionUFSample" />
-        <item itemvalue="Application.QueueWithTwoStacksFaster" />
-        <item itemvalue="Application.WeightedQuickUnionUFAccessTimes" />
       </list>
     </recent_temporary>
   </component>
@@ -433,16 +410,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="835" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49930555" weight="0.325887" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49861112" weight="0.325887" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5034722" side_tool="true" visible="true" weight="0.6386334" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50555557" side_tool="true" visible="true" weight="0.34954008" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4965278" visible="true" weight="0.6386334" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49444443" visible="true" weight="0.34954008" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
@@ -452,7 +430,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.2413793" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49930555" weight="0.46386334" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.3298611" />
@@ -487,33 +465,17 @@
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/kyson/chapter1/section1/BinarySearch.java</url>
+          <line>60</line>
+          <properties />
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="38" />
+      <option name="time" value="39" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section1/RandomConnecSample.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section4/DoublingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="21" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section3/InfixToPostfix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="76" column="17" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section4/DoublingTest2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="83" column="14" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section2/Transaction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -693,13 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section1/BinarySearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="66" column="6" selection-start-line="53" selection-start-column="4" selection-end-line="66" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section4/FractionBinarySearch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -791,31 +746,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section5/UFWithPathCompression.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1083">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter2/section1/Selection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section5/QuickUnion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section5/WeightedQuickUnionUF.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="48" column="16" selection-start-line="48" selection-end-line="49" />
+        <state relative-caret-position="269">
+          <caret line="714" column="58" selection-start-line="714" selection-start-column="58" selection-end-line="714" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -826,17 +760,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/lang/Integer.java">
+    <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter2/section1/Selection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="714" column="58" selection-start-line="714" selection-start-column="58" selection-end-line="714" selection-end-column="58" />
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section5/UFWithPathCompression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section5/WeightedQuickUnionUF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="48" column="16" selection-start-line="48" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section5/QuickUnion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section1/DumplicateElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="40" lean-forward="true" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_03.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+        <state relative-caret-position="57">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_28.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="32" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+          <folding>
+            <element signature="e#139#140#0" expanded="true" />
+            <element signature="e#163#164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/algs4.jar!/edu/princeton/cs/algs4/In.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="329" column="24" selection-start-line="329" selection-start-column="24" selection-end-line="329" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section1/BinarySearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="634">
+          <caret line="64" column="9" lean-forward="true" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_22.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
         </state>
       </provider>
     </entry>
