@@ -35,5 +35,5 @@ public class Practise_01_01_24 {
         int a =gcd(1111111 ,  1234567);
         System.out.println(a + "");
     }
-    
+
 }
