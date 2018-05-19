@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fc5531b-8077-4986-bec8-9fe94eff533f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_27.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_29.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_24.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_24.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kyson/chapter1/section1/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kyson/chapter1/section1/BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_28.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_28.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,11 +31,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Practise_01_01_27.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Practise_01_01_27.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_27.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+            <state relative-caret-position="171">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BinarySearch.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section1/BinarySearch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-24">
+              <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Practise_01_01_28.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_28.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="30" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Practise_01_01_29.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_29.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -105,14 +133,15 @@
         <option value="$PROJECT_DIR$/src/com/kyson/chapter2/section1/Selection.java" />
         <option value="$PROJECT_DIR$/src/com/kyson/chapter1/section5/UFWithPathCompression.java" />
         <option value="$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_03.java" />
-        <option value="$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_28.java" />
-        <option value="$PROJECT_DIR$/src/com/kyson/chapter1/section1/BinarySearch.java" />
         <option value="$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_20.java" />
         <option value="$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_22.java" />
         <option value="$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_23.java" />
         <option value="$PROJECT_DIR$/src/com/kyson/chapter1/section1/GCD.java" />
         <option value="$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_24.java" />
         <option value="$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_27.java" />
+        <option value="$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_28.java" />
+        <option value="$PROJECT_DIR$/src/com/kyson/chapter1/section1/BinarySearch.java" />
+        <option value="$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_29.java" />
       </list>
     </option>
   </component>
@@ -231,7 +260,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Practise_01_01_27">
+  <component name="RunManager" selected="Application.Practise_01_01_29">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -257,17 +286,6 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Practise_01_01_22" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kyson.chapter1.section1.Practise_01_01_22" />
-      <module name="AlgorithmDemo" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.kyson.chapter1.section1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
     <configuration name="Practise_01_01_24" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.kyson.chapter1.section1.Practise_01_01_24" />
       <module name="AlgorithmDemo" />
@@ -281,6 +299,17 @@
     </configuration>
     <configuration name="Practise_01_01_27" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.kyson.chapter1.section1.Practise_01_01_27" />
+      <module name="AlgorithmDemo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kyson.chapter1.section1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Practise_01_01_29" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kyson.chapter1.section1.Practise_01_01_29" />
       <module name="AlgorithmDemo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -338,19 +367,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Unnamed" />
-      <item itemvalue="Application.Practise_01_01_22" />
       <item itemvalue="Application.BinarySearchWithParams" />
       <item itemvalue="Application.GCD" />
       <item itemvalue="Application.Practise_01_01_24" />
       <item itemvalue="Application.Practise_01_01_27" />
+      <item itemvalue="Application.Practise_01_01_29" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Practise_01_01_29" />
         <item itemvalue="Application.Practise_01_01_27" />
         <item itemvalue="Application.Practise_01_01_24" />
         <item itemvalue="Application.GCD" />
         <item itemvalue="Application.BinarySearchWithParams" />
-        <item itemvalue="Application.Practise_01_01_22" />
       </list>
     </recent_temporary>
   </component>
@@ -377,9 +406,9 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5069444" side_tool="true" visible="true" weight="0.31668857" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5083333" side_tool="true" visible="true" weight="0.33377135" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49305555" visible="true" weight="0.31668857" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49166667" visible="true" weight="0.33377135" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
@@ -389,7 +418,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49791667" weight="0.26675427" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4965278" weight="0.3298292" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.3298611" />
@@ -431,17 +460,10 @@
           <option name="timeStamp" value="39" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="41" />
+      <option name="time" value="42" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section2/Interval1D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section2/Interval2D.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -709,31 +731,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_28.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="32" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-          <folding>
-            <element signature="e#139#140#0" expanded="true" />
-            <element signature="e#163#164#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/algs4.jar!/edu/princeton/cs/algs4/In.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="329" column="24" selection-start-line="329" selection-start-column="24" selection-end-line="329" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section1/BinarySearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="64" column="9" lean-forward="true" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -796,10 +797,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_28.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_27.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        <state relative-caret-position="171">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section1/BinarySearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-24">
+          <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kyson/chapter1/section1/Practise_01_01_29.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
         </state>
       </provider>
     </entry>

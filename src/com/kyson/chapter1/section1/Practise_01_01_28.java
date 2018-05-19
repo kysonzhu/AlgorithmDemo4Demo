@@ -8,10 +8,11 @@ public class Practise_01_01_28 {
 
 
 
-    public static int binarySearch(int[] intArry,int target,int a) {
-        return 1;
-    }
+
+
+
 
 
 
 }
+
