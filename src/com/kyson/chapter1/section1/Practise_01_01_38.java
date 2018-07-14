@@ -54,6 +54,7 @@ public class Practise_01_01_38 {
         int[] whiteList = new In(args[0]).readAllInts();
         long time0 = new Date().getTime();
         int key = 0;
+        // 暴力破解无需排序
         if(!StdIn.isEmpty()) {
             key = StdIn.readInt();
             boolean find = bruteForceSearch(key, whiteList);
@@ -64,14 +65,12 @@ public class Practise_01_01_38 {
         long elapsedTime = time1 - time0;
         StdOut.println("暴力查找用时： " + elapsedTime + " ms");
 
-        Arrays.sort(whiteList);                          // 暴力破解无需排序
+        Arrays.sort(whiteList);
         long time2 = new Date().getTime();
         rank(whiteList,key);
         long time3 = new Date().getTime();
         long elapsedTime2 = time3 - time2;
         StdOut.println("二分法查找用时： " + elapsedTime2 + " ms");
-
-
     }
 
 }
