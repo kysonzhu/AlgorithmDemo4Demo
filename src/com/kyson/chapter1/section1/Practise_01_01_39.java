@@ -1,5 +1,7 @@
 package com.kyson.chapter1.section1;
 
+import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdRandom;
 
 import java.util.Arrays;
@@ -37,36 +39,50 @@ public class Practise_01_01_39 {
         return -1;
     }
 
-    public static int[] ramdomArrayA(){
-        int length = (int)Math.pow(10,3);
+    public static int[] ramdomArrayA(int pow){
+        int length = (int)Math.pow(10,pow);
         int[] a = new int[length];
-        for (int i = 0; i < Math.pow(10,3);++i){
+        for (int i = 0; i < length;++i){
             a[i] = StdRandom.uniform(999999);
         }
         return a;
     }
 
-    public static int[] ramdomArrayB(){
-        int length = (int)Math.pow(10,3);
+    public static int[] ramdomArrayB(int pow){
+        int length = (int)Math.pow(10,pow);
         int[] a = new int[length];
-        for (int i = 0; i < Math.pow(10,3);++i){
+        for (int i = 0; i < length;++i){
             a[i] = StdRandom.uniform(999999);
         }
         return a;
     }
 
-    public static void main(String[] args){
-        int[] a = ramdomArrayA();
-        Arrays.sort(a);
-        int[] b = ramdomArrayB();
-        Arrays.sort(b);
+    public static int sameNum(int[] a,int[] b){
         int result = 0;
-        int j = 0;
         for (int i = 0 ; i < b.length; ++i){
             if (rank(b[i],a) != -1) {
                 result++;
             }
         }
+        return result;
     }
+
+    public static void main(String[] args){
+        System.out.println("请输入T:");
+        int T = StdIn.readInt();
+        System.out.println("请输入POW值:");
+        int POW = StdIn.readInt();
+
+        for (int i = 0 ; i < T ; i++){
+            int[] sortedA = ramdomArrayA(POW);
+            Arrays.sort(sortedA);
+            int[] sortedB = ramdomArrayB(POW);
+            Arrays.sort(sortedB);
+
+            System.out.println("相同的数量为"+sameNum(sortedA,sortedB));
+        }
+
+    }
+
 
 }
