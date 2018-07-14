@@ -11,8 +11,9 @@ separating the closest pair of points.
 *
 * */
 
-public class Practise_01_02_01 {
+import java.util.ArrayList;
 
+public class Practise_01_02_01 {
 
     public static class Point2D {
 
@@ -33,4 +34,30 @@ public class Practise_01_02_01 {
         }
     }
 
+
+    public static void main(String[] args){
+
+        int N = 10;
+        ArrayList<Point2D> points = new ArrayList<Point2D>();
+        //创建N个元素的数组
+        for (int i = 0; i < N; i++) {
+            Point2D point2d = new Point2D(Math.random(), Math.random());
+            points.add(point2d);
+        }
+        //计算第一个点到第二个点的距离
+        double resultDistince = points.get(0).distTo(points.get(1));
+
+        for (int i = 0; i < N; i++) {
+            Point2D point2d = points.get(i);
+            for (int j = i + 1; j < N; j++) {
+                //计算第i个点和第j个点之间的距离
+                double distince = point2d.distTo(points.get(j));
+                //如果距离比resultDistince小，就赋值给resultDistince
+                if (distince < resultDistince) {
+                    resultDistince = distince;
+                }
+            }
+        }
+        System.out.println("resultDistince:" + resultDistince);
+    }
 }
