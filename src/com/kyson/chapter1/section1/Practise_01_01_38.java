@@ -72,5 +72,4 @@ public class Practise_01_01_38 {
         long elapsedTime2 = time3 - time2;
         StdOut.println("二分法查找用时： " + elapsedTime2 + " ms");
     }
-
 }
