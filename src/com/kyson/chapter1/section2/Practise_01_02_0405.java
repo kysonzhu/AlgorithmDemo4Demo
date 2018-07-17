@@ -14,6 +14,7 @@ public class Practise_01_02_0405 {
         StdOut.println(string1);
         StdOut.println(string2);
 
+        String a = new String();
 
         String s = "Hello World";
         s.toUpperCase();
