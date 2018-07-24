@@ -4,7 +4,7 @@ public class Counter {
 
 	
 	private int count;
-	@SuppressWarnings("unused")
+
 	private final String name;
 	
 	public Counter(String id) {
@@ -18,8 +18,7 @@ public class Counter {
 	public int tally() {
 		return count;
 	}
-	
-	
+
 	
 	
 }
