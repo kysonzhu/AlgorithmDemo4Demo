@@ -5,6 +5,10 @@ package com.kyson.chapter1.section2;
  * */
 public class Practise_01_02_07 {
 
+
+    /*
+    * 倒序字符串
+    * */
     public static String mystery(String s)
     {
         int N = s.length();
@@ -14,9 +18,33 @@ public class Practise_01_02_07 {
         return mystery(b) + mystery(a);
     }
 
+    /*
+    * 字符串倒序
+    * */
+    public static String reverse(String s){
+        char[] ch  = s.toCharArray();
+        StringBuffer sb = new StringBuffer();
+        for (int i = ch.length - 1; i >= 0; i--) {
+            sb.append(ch[i]);
+        }
+        return sb.toString();
+    }
+
+    /*
+    * 打印出倒序的字符串
+    * */
+    public static void printReverse(String s){
+        int length = s.length();
+        for (int i = length - 1; i >= 0; i--) {
+            System.out.print(s.charAt(i));
+        }
+    }
+
 
     public static void main(String[] args){
         String resultString = mystery("12345678");
         System.out.println(resultString);
+
+
     }
 }

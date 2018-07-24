@@ -11,25 +11,19 @@ package com.kyson.chapter1.section2;
 public class BinarySearchCounter {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		int[] numArray = { 1, 2, 3, 4, 67, 88, 89, 101, 222, 788, 999 };
 		Counter counter = new Counter("BinarySearchCounter");
 		int index = rank(222, numArray, counter);
-
 		System.out.println("index: " + index + "\ncouter:" + counter.tally() );
 	}
 
 	public static int rank(int t, int[] array, Counter counter) {
-
 		int lo = 0;
 		int hi = array.length - 1;
 		int mid = (lo + hi) / 2;
-
 		while (t != array[mid]) {
-			counter.increment();;
+			counter.increment();
 			if (t < array[mid]) {
-
 				if (hi == mid) {
 					return -1;
 				}
@@ -42,7 +36,6 @@ public class BinarySearchCounter {
 			} else {
 				return mid;
 			}
-
 			mid = (lo + hi) / 2;
 		}
 
