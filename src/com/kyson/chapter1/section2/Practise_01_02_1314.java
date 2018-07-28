@@ -216,7 +216,6 @@ public class Practise_01_02_1314 {
 
 
     public static void main(String[] args) throws Exception {
-        Date date=new Date(1996,12,5);
         Transaction tran = new Transaction("Turing 6/17/1990 644.08");
         StdOut.println(tran.toString());
     }
