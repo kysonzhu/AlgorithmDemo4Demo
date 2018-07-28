@@ -3,7 +3,7 @@ package com.kyson.chapter1.section2;
 import java.util.Scanner;
 /*
 *
-* 
+*
 * */
 public class Practise_01_02_12 {
     public static class SmartDate {
