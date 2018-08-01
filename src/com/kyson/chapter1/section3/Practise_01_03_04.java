@@ -1,0 +1,72 @@
+package com.kyson.chapter1.section3;
+
+/*
+*
+* 1.3.4 编写一个Stack的用例Parentheses,从标准输入中读取一个文本流并使用栈判定其中的括号是否配对完整.例如[()]{}{[()]}为true,对于
+* [(])程序则打印false。
+
+1.3.4 Write a stack client Parentheses that reads in a text stream from standard input and uses a stack to
+ determine whether its parentheses are properly balanced. For example, your program should print true for
+  [()]{}{()()} and false for [(]).
+*/
+public class Practise_01_03_04 {
+
+    public static boolean isParentheses(String x) {
+
+        String stream = "[(])";
+        boolean isPaired = true;
+
+        Stack<String> ops = new Stack<String>();
+        for (int i = 0; i < stream.length(); i++)
+        {
+            char item = stream.charAt(i);
+            String s = String.valueOf(item);
+
+            if (s.equals("[")) {
+                ops.push(s);
+            }else if (s.equals("(")) {
+                ops.push(s);
+            }else if (s.equals("{")) {
+                ops.push(s);
+            }else if(s.equals("]"))
+            {
+                String popedString = ops.pop();
+                if (!popedString.equals("["))
+                {
+                    isPaired = false;
+                    break;
+                }
+            }else if(s.equals("}"))
+            {
+                String popedString = ops.pop();
+                if (!popedString.equals("{"))
+                {
+                    isPaired = false;
+                    break;
+                }
+            }else if (s.equals(")"))
+            {
+                String popedString = ops.pop();
+                if (!popedString.equals("("))
+                {
+                    isPaired = false;
+                    break;
+                }
+            }
+        }
+
+        if (!ops.isEmpty()) {
+            isPaired = false;
+        }
+        System.out.println(isPaired);
+        return isPaired;
+    }
+
+    public static void main(String[] args) {
+        String stream = "[()]{}{[()()]()}";
+        boolean isParentheses = isParentheses(stream);
+        System.out.print(isParentheses + "===");
+
+    }
+
+}
