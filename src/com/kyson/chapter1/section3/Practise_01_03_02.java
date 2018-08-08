@@ -35,7 +35,7 @@ public class Practise_01_03_02 {
     }
 
     public static void main(String[] args){
-        FixedCapacityStackOfStrings s = new FixedCapacityStackOfStrings();
+        FixedCapacityStackOfStrings s = new FixedCapacityStackOfStrings(1);
         while (!StdIn.isEmpty()){
             String item = StdIn.readString();
             if (!item.equals("-")){
