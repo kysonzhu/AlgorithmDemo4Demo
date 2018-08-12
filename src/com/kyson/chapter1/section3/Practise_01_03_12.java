@@ -1,5 +1,7 @@
 package com.kyson.chapter1.section3;
 
+import edu.princeton.cs.algs4.StdOut;
+
 import java.util.Iterator;
 
 /*
@@ -16,7 +18,7 @@ of the value of having an iterator, because it allows development of such func- 
 * */
 public class Practise_01_03_12 {
 
-    public static class Stack<Item> implements Iterable {
+    public static class  Stack<Item> implements Iterable<Item> {
 
         private Item[] a;
         private int N;
@@ -41,6 +43,28 @@ public class Practise_01_03_12 {
             a = temp;
         }
 
+        public boolean isEmpty() {
+            return N == 0;
+        }
+
+        public static Stack<String> copy(Stack<String> x)
+        {
+            Stack<String> xx = new Stack<String>(1);
+            Stack<String> yy = new Stack<String>(1);
+
+            Stack<String>.StackIterator xit = x.iterator();
+
+            while (xit.hasNext()){
+                xx.push(xit.next());
+            }
+
+            Stack<String>.StackIterator xxit = xx.iterator();
+            while (xxit.hasNext()) {
+                yy.push(xxit.next());
+            }
+            return yy;
+        }
+
         public Item pop() {
             Item item = a[--N];
             a[N] = null;
@@ -50,10 +74,24 @@ public class Practise_01_03_12 {
             return item;
         }
 
+        public StackIterator iterator()
+        {
+            return new StackIterator();
+        }
 
-        @Override
-        public Iterator iterator() {
-            return null;
+        private class StackIterator implements Iterator<Item>
+        {
+            private int i = N;
+
+            @Override
+            public boolean hasNext() {
+                return i > 0;
+            }
+
+            @Override
+            public Item next() {
+                return a[--i];
+            }
         }
     }
 
@@ -69,6 +107,12 @@ public class Practise_01_03_12 {
         a.push("6");
         a.pop();
         a.pop();
+
+        Stack<String> b= Stack.copy(a);
+        for (String item : b) {
+            StdOut.println(item);
+        }
+
     }
 
 }
