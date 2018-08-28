@@ -49,6 +49,11 @@ public class Practise_01_03_31 {
             N++;
         }
 
+        public Item pop(){
+            DoubleNode oldFirst = first;
+            
+        }
+
         public static void insert(DoubleNode tail) {
 
         }
