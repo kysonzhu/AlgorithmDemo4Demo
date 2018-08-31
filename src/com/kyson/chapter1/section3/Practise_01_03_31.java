@@ -1,6 +1,5 @@
 package com.kyson.chapter1.section3;
 
-
 import java.util.NoSuchElementException;
 
 /*
@@ -189,4 +188,3 @@ public class Practise_01_03_31 {
 
 
     }
-}
