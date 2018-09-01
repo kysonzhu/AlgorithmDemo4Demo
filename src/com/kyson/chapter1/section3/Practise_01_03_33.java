@@ -103,7 +103,7 @@ public class Practise_01_03_33 {
         }
 
         public static void main(String[] args) {
-            Deque<String> deque = new Deque<String>(10);
+            Deque<String> deque = new Deque<String>();
             deque.pushRight("To");
             deque.pushRight("Be");
             deque.pushRight("or");
