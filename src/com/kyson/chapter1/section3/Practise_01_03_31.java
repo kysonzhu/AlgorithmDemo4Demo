@@ -20,16 +20,16 @@ public class Practise_01_03_31 {
     public static class DoubleLinkedList<Item> {
 
         public static class DoubleNode<Item> {
-            DoubleNode previous,next;
+            DoubleNode previous, next;
             Item item;
 
             //无参数的构造器
-            public DoubleNode(){
+            public DoubleNode() {
 
             }
 
             //初始化全部属性的构造器
-            public DoubleNode(Item data, DoubleNode prev, DoubleNode next){
+            public DoubleNode(Item data, DoubleNode prev, DoubleNode next) {
                 this.item = data;
                 this.previous = prev;
                 this.next = next;
@@ -45,7 +45,7 @@ public class Practise_01_03_31 {
         }
 
         public DoubleNode getNodeByIndex(int index) {
-            if(index < 0 || index > size -1){
+            if (index < 0 || index > size - 1) {
                 throw new IndexOutOfBoundsException("线性表索引越界");
             }
 
@@ -65,121 +65,121 @@ public class Practise_01_03_31 {
         }
 
         //向线性链表的表头插入一个元素
-        public void addFirst(Item element){
+        public void addFirst(Item element) {
             linkFirst(element);
         }
 
 
         //在线性链表表头插入一个元素
-        public void linkFirst(Item element){
+        public void linkFirst(Item element) {
             DoubleNode f = head;
-            DoubleNode newNode = new DoubleNode(element,null,f);
+            DoubleNode newNode = new DoubleNode(element, null, f);
             head = newNode;
-            if(f == null){
+            if (f == null) {
                 tail = newNode;
-            }else{
+            } else {
                 f.previous = newNode;
             }
             size++;
         }
 
         //在线性链表的表尾插入一个元素
-        public void linkTail(Item element){
+        public void linkTail(Item element) {
             DoubleNode t = tail;
             DoubleNode newNode = new DoubleNode(element, t, null);
             tail = newNode;
-            if(t == null){
+            if (t == null) {
                 head = newNode;
-            }else{
+            } else {
                 t.next = newNode;
             }
             size++;
         }
 
         //向线性链表的表尾插入一个元素
-        public void addTail(Item element){
+        public void addTail(Item element) {
             linkTail(element);
         }
 
         //在线性表中某个元素前面插入一个节点
-        public void linkBefore(Item element, DoubleNode node){
+        public void linkBefore(Item element, DoubleNode node) {
             DoubleNode pre = node.previous;
             DoubleNode newNode = new DoubleNode(element, pre, node);
             node.previous = newNode;
-            if(pre == null){
+            if (pre == null) {
                 head = newNode;
-            }else{
+            } else {
                 pre.next = newNode;
             }
             size++;
         }
 
         //删除头结点
-        public void unlinkFirst(DoubleNode node){
+        public void unlinkFirst(DoubleNode node) {
             DoubleNode next = node.next;
             node.item = null;
             node.next = null;
             head = next;
-            if(next == null){
+            if (next == null) {
                 tail = null;
-            }else{
+            } else {
                 next.previous = null;
             }
             size--;
         }
 
         //移走线性链表的头结点
-        public void removeFirst(){
+        public void removeFirst() {
             DoubleNode first = head;
-            if(first == null)
+            if (first == null)
                 throw new NoSuchElementException("此节点不存在");
             unlinkFirst(first);
         }
 
         //删除尾节点
-        public void unlinkLast(DoubleNode node){
+        public void unlinkLast(DoubleNode node) {
             DoubleNode pre = node.previous;
             node.item = null;
             node.previous = null;
             tail = pre;
-            if(pre == null){
+            if (pre == null) {
                 head = null;
-            }else{
+            } else {
                 pre.next = null;
             }
             size--;
         }
 
         //移走线性链表的尾节点
-        public void removeTail(){
+        public void removeTail() {
             DoubleNode last = tail;
-            if(last == null)
+            if (last == null)
                 throw new NoSuchElementException("此节点不存在");
             unlinkLast(last);
         }
 
         //移走线性表中的任意一个节点
-        public void remove(int index){
-            if(index < 0 || index >size - 1){
+        public void remove(int index) {
+            if (index < 0 || index > size - 1) {
                 throw new IndexOutOfBoundsException("线性表越界");
             }
             unlink(getNodeByIndex(index));
         }
 
         //删除线性表中任意一个元素
-        public void unlink(DoubleNode node){
+        public void unlink(DoubleNode node) {
             DoubleNode pre = node.previous;
             DoubleNode next = node.next;
             node.item = null;
-            if(pre == null){
+            if (pre == null) {
                 head = next;
-            }else{
+            } else {
                 pre.next = next;
                 node.previous = null;
             }
-            if(next == null){
+            if (next == null) {
                 tail = pre;
-            }else{
+            } else {
                 next.previous = pre;
                 node.next = null;
             }
@@ -188,3 +188,4 @@ public class Practise_01_03_31 {
 
 
     }
+}
