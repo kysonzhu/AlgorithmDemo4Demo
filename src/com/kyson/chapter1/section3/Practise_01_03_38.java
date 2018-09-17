@@ -18,37 +18,46 @@ public class Practise_01_03_38 {
         }
 
         private GeneralizedItem[] a ;
-        int N;
+        private int head = 0;
+        private int tail = 0;
 
-        public GeneralizedQueue(int size) {
-            a = new Object[size];
+        public GeneralizedQueue(int capacity) {
+            a = new GeneralizedItem[capacity];
         }
 
         public void enqueue(Item item)
         {
             GeneralizedItem realItem = new GeneralizedItem();
             realItem.item = item;
-
-            a[N++] = realItem;
+            a[tail++] = realItem;
         }
 
         public Item dequeue() {
-            GeneralizedItem realItem = a[--N];
-            a[N] = null;
+            if (a[head].hasDeleted == true) {
+                head++;
+                dequeue();
+            }
 
+            GeneralizedItem<Item> realItem = a[head++];
             return realItem.item;
+        }
+
+        public void delete(int k) {
+            GeneralizedItem<Item> realItem = a[k];
+            realItem.hasDeleted = true;
         }
 
 
         public static void main(String[] args) {
             GeneralizedQueue queue = new GeneralizedQueue(6);
-            queue.equals("To");
-            queue.equals("Be");
-            queue.equals("Or");
-            queue.equals("Not");
+            queue.enqueue("To");
+            queue.enqueue("Be");
+            queue.enqueue("Or");
+            queue.enqueue("Not");
 
             StdOut.print(queue.dequeue());
-
+            queue.delete(0);
+            StdOut.print(queue.dequeue());
         }
 
     }
