@@ -1,6 +1,5 @@
 package com.kyson.chapter1.section3;
 
-import edu.princeton.cs.algs4.StdOut;
 
 /*
 *
@@ -25,41 +24,76 @@ public class Practise_01_03_38 {
             a = new GeneralizedItem[capacity];
         }
 
-        public void enqueue(Item item)
+        public void insert(Item item)
         {
+            if (tail == a.length - 1) {
+                resize( a.length * 2);
+            }
             GeneralizedItem realItem = new GeneralizedItem();
             realItem.item = item;
             a[tail++] = realItem;
         }
 
-        public Item dequeue() {
-            if (a[head].hasDeleted == true) {
-                head++;
-                dequeue();
+        public void delete(int k) {
+
+            int realSize = 0;
+            int realIndex = 0;
+
+            for (int i = 0; i < a.length; i++)
+            {
+                GeneralizedItem<Item> tempItem = a[i];
+                if (tempItem != null )
+                {
+                    if (tempItem.hasDeleted == false)
+                    {
+                        if (k == realSize) {
+                            realIndex = i;
+                        }
+                        realSize++;
+                    }
+                }
             }
 
-            GeneralizedItem<Item> realItem = a[head++];
-            return realItem.item;
+            if (realSize == a.length / 4)
+            {
+                resize( a.length / 2);
+                GeneralizedItem<Item> realItem = a[k];
+                realItem.hasDeleted = true;
+            } else {
+                GeneralizedItem<Item> realItem = a[realIndex];
+                realItem.hasDeleted = true;
+            }
+
+
         }
 
-        public void delete(int k) {
-            GeneralizedItem<Item> realItem = a[k];
-            realItem.hasDeleted = true;
+        private void resize(int size) {
+            int realSize = 0;
+            GeneralizedItem<Item> temp[] = new GeneralizedItem[size];
+
+            for (int i = 0; i < a.length; i++) {
+                GeneralizedItem<Item> realItem = a[i];
+                if (realItem != null && realItem.hasDeleted == false) {
+                    temp[realSize++] = realItem;
+                }
+            }
+            a = temp;
+            tail = realSize;
+            head = 0;
         }
 
 
         public static void main(String[] args) {
-            GeneralizedQueue queue = new GeneralizedQueue(6);
-            queue.enqueue("To");
-            queue.enqueue("Be");
-            queue.enqueue("Or");
-            queue.enqueue("Not");
+            GeneralizedQueue queue = new GeneralizedQueue(2);
+            queue.insert("To");
+            queue.insert("Be");
+            queue.insert("Or");
+            queue.insert("Not");
 
-            StdOut.print(queue.dequeue());
             queue.delete(0);
-            StdOut.print(queue.dequeue());
+            queue.delete(0);
+            queue.delete(0);
         }
-
     }
 
 }
