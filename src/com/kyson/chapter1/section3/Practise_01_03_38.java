@@ -2,7 +2,14 @@ package com.kyson.chapter1.section3;
 
 
 /*
-*
+*1.3.38 删除第 k 个元素。实现一个类并支持下表的 API：
+
+函数	描述
+GeneralizeQueue()	创建一条空队列。
+bool isEmpty()	队列是否为空。
+void Insert(Item x)	添加一个元素。
+Item delete(int k)	删除并返回最早插入的第 k 个元素。
+首先用数组实现该数据类型，然后用链表实现该数据类型。
 *
 *
 * */
