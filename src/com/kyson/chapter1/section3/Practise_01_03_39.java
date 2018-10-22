@@ -97,6 +97,16 @@ public class Practise_01_03_39 {
                 }
             }
         }
+
+
+
+    }
+
+    public static void main(String[] args)
+    {
+        RingBuffer rb = new RingBuffer<String>(5);
+        rb.put("1");
+
     }
 
 }
