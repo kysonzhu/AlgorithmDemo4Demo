@@ -61,28 +61,28 @@ public class Practise_01_03_44 {
 
 
 
-    public static class Buffer
+    public class Buffer
     {
         private Stack<Character> leftside;
         private Stack<Character> rightside;
 
         public Buffer()
         {
-            this.leftside = new Stack<Character>();
-            this.rightside = new Stack<Character>();
+            this.leftside = new Stack<Character>(1);
+            this.rightside = new Stack<Character>(1);
         }
 
-        public void Insert(Character c)
+        public void insert(Character c)
         {
             this.leftside.push(c);
         }
 
-        public char Delete()
+        public char delete()
         {
             return this.leftside.pop();
         }
 
-        public void Left(int k)
+        public void left(int k)
         {
             for (int i = 0; i < k; ++i)
             {
@@ -90,7 +90,7 @@ public class Practise_01_03_44 {
             }
         }
 
-        public void Right(int k)
+        public void right(int k)
         {
             for (int i = 0; i < k; ++i)
             {
@@ -98,7 +98,7 @@ public class Practise_01_03_44 {
             }
         }
 
-        public int Size()
+        public int size()
         {
             return this.leftside.size() + this.rightside.size();
         }
@@ -113,10 +113,7 @@ public class Practise_01_03_44 {
             return rightside.toString();
         }
 
-        
     }
-
-
 
 
 }

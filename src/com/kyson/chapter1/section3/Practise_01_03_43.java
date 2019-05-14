@@ -38,6 +38,8 @@ public class Practise_01_03_43 {
     {
         String path = "/Users/kyson/Desktop/";
         File file = new File(path);
+        System.out.println("the files of path :[" + path + "] are:");
+
         printFile(file,0);
     }
 
