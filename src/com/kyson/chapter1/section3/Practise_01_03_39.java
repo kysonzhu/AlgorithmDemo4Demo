@@ -104,8 +104,37 @@ public class Practise_01_03_39 {
 
     public static void main(String[] args)
     {
-        RingBuffer rb = new RingBuffer<String>(5);
-        rb.put("1");
+//        RingBuffer rb = new RingBuffer<String>(5);
+//        rb.put("1");
+
+        int capacity = 10;
+        RingBuffer<String> ringBuffer = new RingBuffer<String>(capacity);
+
+        /*******************测试用例1*************************/
+//        for (int i = 0; i < capacity; i++) {
+//            String inputItem = i+"";
+//            boolean putSuccess = ringBuffer.put(inputItem);
+//            System.out.println(putSuccess ? "插入" + inputItem + "成功" : "插入" + inputItem + "失败" );
+//        }
+
+        /*******************测试用例2*************************/
+        for (int i = 0; i < capacity + 1; i++) {
+
+            if (i == capacity - 1) {
+                String takeItem = ringBuffer.take();
+                System.out.println("取出" + takeItem + "成功");
+            }
+
+            if (i == capacity) {
+                String takeItem = ringBuffer.take();
+                System.out.println("取出" + takeItem + "成功");
+            }
+
+            String inputItem = i+"";
+            boolean putSuccess = ringBuffer.put(inputItem);
+            System.out.println(putSuccess ? "插入" + inputItem + "成功" : "插入" + inputItem + "失败" );
+        }
+
 
     }
 

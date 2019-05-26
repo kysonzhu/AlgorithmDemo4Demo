@@ -109,8 +109,12 @@ public class Practise_01_03_12 {
         a.pop();
 
         Stack<String> b= Stack.copy(a);
-        for (String item : b) {
-            StdOut.println(item);
+//        for (String item : b) {
+//            StdOut.println(item);
+//        }
+
+        while(b.iterator().hasNext()){
+            StdOut.println(b.pop());
         }
 
     }

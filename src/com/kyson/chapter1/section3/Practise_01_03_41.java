@@ -1,7 +1,5 @@
 package com.kyson.chapter1.section3;
 
-import edu.princeton.cs.algs4.StdOut;
-
 /*
 *1.3.41 复制队列。编写一个新的构造函数，使以下函数
 
@@ -29,6 +27,10 @@ public class Practise_01_03_41 {
             }
         }
 
+        public Queue() {
+
+        }
+
         private class Node {
             Item item;
             Node next;
@@ -36,10 +38,6 @@ public class Practise_01_03_41 {
 
         private Node first;
         private Node last;
-
-        public Queue() {
-
-        }
 
         public boolean isEmpty() {
             if (first == null)
