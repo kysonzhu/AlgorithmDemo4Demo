@@ -113,7 +113,15 @@ public class Practise_01_03_33 {
             for (String string : deque) {
                 System.out.println(string);
             }
-            System.out.println("===========================");
+            System.out.println("1===========================");
+
+            deque.popLeft();
+
+            for (String string : deque) {
+                System.out.println(string);
+            }
+
+            System.out.println("2===========================");
 
             Deque<String> deque1 = new Deque<String>();
             deque1.pushLeft("To");
@@ -122,18 +130,11 @@ public class Practise_01_03_33 {
             deque1.pushLeft("Not");
             deque1.pushLeft("to");
 
-            for (String string : deque1) {
-                System.out.println(string);
-            }
-            System.out.println("===========================");
-
-            deque.popLeft();
-
-            for (String string : deque) {
-                System.out.println(string);
+            for (String string1 : deque1) {
+                System.out.println(string1);
             }
 
-            System.out.println("===========================");
+            System.out.println("3===========================");
             deque1.popRight();
 
             for (String string : deque1) {
@@ -143,4 +144,5 @@ public class Practise_01_03_33 {
         }
 
     }
-            }
+
+}
