@@ -50,7 +50,7 @@ public class HistogramSample {
 		System.out.println("调用函数后获取的数组：");
 		for (int i = 0; i < b.length; i++) {
 			System.out.println(b[i]);
-		}		
+		}
 	}
 
 }

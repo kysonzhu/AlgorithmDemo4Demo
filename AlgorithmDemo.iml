@@ -13,8 +13,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="inheritedJdk" />
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="algs4.jar">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/lib/algs4.jar!/" />
@@ -23,6 +22,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="library" name="ujmp-complete-0.3.0" level="project" />
   </component>
 </module>

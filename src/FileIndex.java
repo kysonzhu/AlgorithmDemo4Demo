@@ -61,6 +61,7 @@ public class FileIndex {
         // 找到重复元素
 
         map.put("1.1.15", HistogramSample.class.getName());
+        map.put("1.1.16", HistogramSample.class.getName());
         map.put("1.1.22", BinarySearchRecursion.class.getName());
         map.put("1.1.23", BinarySearchWithParams.class.getName());
         map.put("1.1.27", BinomialSample.class.getName());

@@ -1,8 +1,5 @@
 package com.kyson.chapter1.section1;
 
-import org.ujmp.core.DenseMatrix;
-import org.ujmp.core.Matrix;
-
 import java.util.Arrays;
 
 /*
