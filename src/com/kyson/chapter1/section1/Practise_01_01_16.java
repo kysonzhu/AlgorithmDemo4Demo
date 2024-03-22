@@ -13,7 +13,6 @@ package com.kyson.chapter1.section1;
  *    return exR1(n-3) + n + exR1(n-2) + n;
  * }
  */
-/
 
 public class Practise_01_01_16 {
 
